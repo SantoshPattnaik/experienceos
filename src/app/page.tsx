@@ -1,9 +1,7 @@
+import Main from "./main_interface/main";
+
 const Home = (): React.JSX.Element => {
-	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			<div>Hello Experience OS</div>
-		</main>
-	);
+	return <Main />;
 };
 
 export default Home;
