@@ -19,15 +19,21 @@ const Main = (): React.JSX.Element => {
 
 				{/*div that contains the cards to OSes*/}
 				<div className="flex gap-20 w-fit">
-					<div className="windows h-40 w-60 border-2 rounded-xl flex justify-center">
-						<Link href="/windows">Windows</Link>
-					</div>
-					<div className="linux h-40 w-60 border-2 rounded-xl flex justify-center">
-						<Link href="/linux">Linux</Link>
-					</div>
-					<div className="macos h-40 w-60 border-2 rounded-xl flex justify-center">
-						<Link href="/macos">Mac OS</Link>
-					</div>
+					<Link href="/windows">
+						<div className="windows h-40 w-60 border-2 rounded-xl flex justify-center">
+							Windows
+						</div>
+					</Link>
+					<Link href="/linux">
+						<div className="linux h-40 w-60 border-2 rounded-xl flex justify-center">
+							Linux
+						</div>
+					</Link>
+					<Link href="/macos">
+						<div className="macos h-40 w-60 border-2 rounded-xl flex justify-center">
+							Mac OS
+						</div>
+					</Link>
 				</div>
 			</div>
 		</main>
