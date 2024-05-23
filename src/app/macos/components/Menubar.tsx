@@ -1,12 +1,13 @@
 import React from "react";
 import { FaApple } from "react-icons/fa";
+import Time from "./Time";
 
 function Menubar() {
 	return (
 		<div className="bg-black/35 text-white">
 			<nav className="menubar flex w-full gap-20">
 				<div className="menus">
-					<ul className="flex gap-5 text-[18px] font-medium">
+					<ul className="flex gap-5 text-[17px] font-medium">
 						<li className="hover:cursor-pointer">
 							<ul className="text-2xl">
 								<FaApple />
@@ -22,11 +23,11 @@ function Menubar() {
 					</ul>
 				</div>
 				<div className="status">
-					<ul className="flex space-x-36 text-[18px] font-medium justify-end">
+					<ul className="flex space-x-36 text-[17px] font-medium justify-end">
 						<li className="hover:cursor-pointer"></li>
 						<li className="hover:cursor-pointer"></li>
 						<li className="hover:cursor-pointer"></li>
-						<li className="hover:cursor-pointer">{Date()}</li>
+						<Time />
 					</ul>
 				</div>
 			</nav>
