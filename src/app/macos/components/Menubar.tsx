@@ -20,14 +20,14 @@ function Menubar() {
 					<li className="hover:cursor-pointer">Help</li>
 				</ul>
 			</div>
-			{/* <div className="status"> */}
-			<ul className="flex space-x-36 text-[18px] font-medium justify-end">
-				<li className="hover:cursor-pointer"></li>
-				<li className="hover:cursor-pointer"></li>
-				<li className="hover:cursor-pointer"></li>
-				<li className="hover:cursor-pointer">{Date()}</li>
-			</ul>
-			{/* </div> */}
+			<div className="status">
+				<ul className="flex space-x-36 text-[18px] font-medium justify-end">
+					<li className="hover:cursor-pointer"></li>
+					<li className="hover:cursor-pointer"></li>
+					<li className="hover:cursor-pointer"></li>
+					<li className="hover:cursor-pointer">{Date()}</li>
+				</ul>
+			</div>
 		</nav>
 	);
 }
