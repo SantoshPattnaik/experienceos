@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<footer className="bg-zinc-50 text-center dark:bg-neutral-700 fixed w-full bottom-0">
-			<div className="bg-black/5 p-4 text-center text-surface dark:text-white">
+		<footer className="text-center fixed w-full bottom-0">
+			<div className="p-4 text-center text-surface text-white backdrop-blur-md backdrop-opacity-85 bg-opacity-45">
 				<div>Taskbar</div>
 			</div>
 		</footer>
