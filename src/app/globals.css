@@ -34,13 +34,16 @@ body {
 .windows {
 	background-image: url("../../public/wp9378868.webp");
 	background-size: cover;
+	height: 100vh;
 }
 
 .macos {
 	background-image: url("../../public/366398.jpg");
 	background-size: cover;
+	height: 100vh;
 }
 .linux {
 	background-image: url("../../public/2902765.jpg");
 	background-size: cover;
+	height: 100vh;
 }
