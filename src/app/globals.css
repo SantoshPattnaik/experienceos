@@ -32,15 +32,15 @@ body {
   }
 } */
 .windows {
-  background-image: url(../../public/wp9378868.webp);
-  background-size: cover;
+	background-image: url("../../public/wp9378868.webp");
+	background-size: cover;
 }
 
 .macos {
-  background-image: url(../../public/366398.jpg);
-  background-size: cover;
+	background-image: url("../../public/366398.jpg");
+	background-size: cover;
 }
 .linux {
-  background-image: url(../../public/2902765.jpg);
-  background-size: cover;
+	background-image: url("../../public/2902765.jpg");
+	background-size: cover;
 }
