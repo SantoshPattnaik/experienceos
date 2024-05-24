@@ -30,11 +30,11 @@ function Menubar() {
 					<div className="status justify-end flex-grow mr-1">
 						<ul className="flex space-x-2 text-[17px] font-medium justify-end ">
 							{/* Time Viewer */}
-							<FaWifi className="text-2xl" />
-							<IoMdBluetooth className="text-2xl" />
-							<FaDisplay className="text-2xl" />
-							<TiBatteryCharge className="text-2xl" />
-							<IoMdSearch className="text-2xl" />
+							<FaWifi className="text-2xl hover:cursor-pointer" />
+							<IoMdBluetooth className="text-2xl hover:cursor-pointer" />
+							<FaDisplay className="text-2xl hover:cursor-pointer" />
+							<TiBatteryCharge className="text-2xl hover:cursor-pointer" />
+							<IoMdSearch className="text-2xl hover:cursor-pointer" />
 							<Time />
 						</ul>
 					</div>
