@@ -4,7 +4,7 @@ import Time from "./Time";
 
 function Menubar() {
 	return (
-		<div className="bg-white/55">
+		<div className="bg-white/50">
 			<nav className="menubar flex w-full gap-20">
 				<div className="menus">
 					<ul className="flex gap-5 text-[17px] font-medium">
