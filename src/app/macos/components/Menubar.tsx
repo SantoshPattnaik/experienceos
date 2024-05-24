@@ -1,6 +1,6 @@
 import React from "react";
 import { FaApple, FaWifi } from "react-icons/fa";
-import Time from "./Time";
+import Time from "../../main_interface/components/Time";
 import { IoMdBluetooth, IoMdSearch } from "react-icons/io";
 import { FaDisplay } from "react-icons/fa6";
 import { TiBatteryCharge } from "react-icons/ti";
