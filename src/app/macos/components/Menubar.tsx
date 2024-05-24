@@ -1,6 +1,9 @@
 import React from "react";
-import { FaApple } from "react-icons/fa";
+import { FaApple, FaWifi } from "react-icons/fa";
 import Time from "./Time";
+import { IoMdBluetooth, IoMdSearch } from "react-icons/io";
+import { FaDisplay } from "react-icons/fa6";
+import { TiBatteryCharge } from "react-icons/ti";
 
 function Menubar() {
 	return (
@@ -11,6 +14,7 @@ function Menubar() {
 						<ul className="flex gap-5 text-[17px] font-medium">
 							<li className="hover:cursor-pointer">
 								<ul className="text-2xl">
+									{/* Apple Logo */}
 									<FaApple />
 								</ul>
 							</li>
@@ -24,14 +28,38 @@ function Menubar() {
 						</ul>
 					</div>
 					<div className="status justify-end flex-grow mr-1">
-						<ul className="flex space-x-36 text-[17px] font-medium justify-end ">
-							<li className="hover:cursor-pointer"></li>
-							<li className="hover:cursor-pointer"></li>
-							<li className="hover:cursor-pointer"></li>
+						<ul className="flex space-x-2 text-[17px] font-medium justify-end ">
+							{/* Time Viewer */}
+							<FaWifi className="text-2xl" />
+							<IoMdBluetooth className="text-2xl" />
+							<FaDisplay className="text-2xl" />
+							<TiBatteryCharge className="text-2xl" />
+							<IoMdSearch className="text-2xl" />
 							<Time />
 						</ul>
 					</div>
 				</nav>
+			</div>
+			<div className="absolute bg-white/50 top-7 text-center rounded left-2 p-1">
+				<ul>
+					<li>About</li>
+					<li>Shutdown</li>
+					<li>Restart</li>
+				</ul>
+			</div>
+			<div className="absolute bg-white/50 top-7 text-center rounded left-20 p-1">
+				<ul>
+					<li>About</li>
+					<li>Shutdown</li>
+					<li>Restart</li>
+				</ul>
+			</div>
+			<div className="absolute bg-white/50 top-7 text-center rounded left-2 p-1">
+				<ul>
+					<li>About</li>
+					<li>Shutdown</li>
+					<li>Restart</li>
+				</ul>
 			</div>
 			<div className="absolute bg-white/50 top-7 text-center rounded left-2 p-1">
 				<ul>
