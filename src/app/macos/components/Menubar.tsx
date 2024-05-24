@@ -4,7 +4,7 @@ import Time from "./Time";
 
 function Menubar() {
 	return (
-		<div className="bg-black/35 text-white">
+		<div className="bg-white/55">
 			<nav className="menubar flex w-full gap-20">
 				<div className="menus">
 					<ul className="flex gap-5 text-[17px] font-medium">
@@ -22,8 +22,8 @@ function Menubar() {
 						<li className="hover:cursor-pointer">Help</li>
 					</ul>
 				</div>
-				<div className="status">
-					<ul className="flex space-x-36 text-[17px] font-medium justify-end">
+				<div className="status justify-end flex-grow mr-1">
+					<ul className="flex space-x-36 text-[17px] font-medium justify-end ">
 						<li className="hover:cursor-pointer"></li>
 						<li className="hover:cursor-pointer"></li>
 						<li className="hover:cursor-pointer"></li>
