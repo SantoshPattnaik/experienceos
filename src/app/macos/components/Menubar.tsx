@@ -1,7 +1,9 @@
 import React from "react";
 import { FaApple, FaWifi } from "react-icons/fa";
 import Time from "./Time";
-import { IoMdBluetooth } from "react-icons/io";
+import { IoMdBluetooth, IoMdSearch } from "react-icons/io";
+import { FaDisplay } from "react-icons/fa6";
+import { TiBatteryCharge } from "react-icons/ti";
 
 function Menubar() {
 	return (
@@ -30,6 +32,9 @@ function Menubar() {
 							{/* Time Viewer */}
 							<FaWifi className="text-2xl" />
 							<IoMdBluetooth className="text-2xl" />
+							<FaDisplay className="text-2xl" />
+							<TiBatteryCharge className="text-2xl" />
+							<IoMdSearch className="text-2xl" />
 							<Time />
 						</ul>
 					</div>
