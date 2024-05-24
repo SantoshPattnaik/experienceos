@@ -15,7 +15,7 @@ function Menubar() {
 							<li className="hover:cursor-pointer">
 								<ul className="text-2xl">
 									{/* Apple Logo */}
-									<FaApple />
+									<FaApple className="ml-3" />
 								</ul>
 							</li>
 							<li className="hover:cursor-pointer">Finder</li>
