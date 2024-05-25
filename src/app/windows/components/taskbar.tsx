@@ -11,6 +11,8 @@ import blender from "../../../../public/windows/Blender.svg";
 import ae from "../../../../public/windows/After Effects.svg";
 import notification from "../../../../public/windows/bell-svgrepo-com.svg";
 
+
+// Taskbar Component
 const Taskbar = () => {
   return (
     <footer className="text-center fixed w-full bottom-0 h-[64px] ">
