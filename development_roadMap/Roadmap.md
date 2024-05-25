@@ -18,4 +18,5 @@
 3. Basic taskbar icons for both windows and mac
 4. basic menubar items for mac
 5. added hover cursor feature only
-6. 
+### tasks completed on 25/5/2024
+1. added desktop icons in windows
