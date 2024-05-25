@@ -27,7 +27,7 @@ const Taskbar = () => {
               <Image src={vscode} alt="" height={34} width={34} />
             </li>
             <li className="hover:cursor-pointer">
-              <Image src={ae} alt="" height={34} width={34} />
+              <Image src={github} alt="" height={34} width={34} />
             </li>
             <li className="hover:cursor-pointer">
               <Image src={blender} alt="" height={34} width={34} />
@@ -36,7 +36,7 @@ const Taskbar = () => {
               <Image src={vs} alt="" height={34} width={34} />
             </li>
             <li className="hover:cursor-pointer">
-              <Image src={github} alt="" height={34} width={34} />
+              <Image src={ae} alt="" height={34} width={34} />
             </li>
           </ul>
         </div>
