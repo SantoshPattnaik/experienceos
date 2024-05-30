@@ -1,14 +1,14 @@
 import React from "react";
 import Menubar from "./components/Menubar";
-import Taskbar from "./components/Taskbar";
+import Dock from "./components/Dock";
 
 const page = () => {
-	return (
-		<div className="macos h-[100vh] w-[100w] flex flex-col justify-between ">
-			<Menubar />
-			<Taskbar />
-		</div>
-	);
+  return (
+    <div className="macos h-[100vh] w-[100w] flex flex-col justify-between ">
+      <Menubar />
+      <Dock />
+    </div>
+  );
 };
 
-export default page
+export default page;

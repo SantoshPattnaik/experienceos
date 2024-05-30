@@ -1,7 +1,7 @@
 import React from "react";
 
-function Taskbar() {
+function Dock() {
   return <div>Taskbar</div>;
 }
 
-export default Taskbar;
+export default Dock;

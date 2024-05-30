@@ -7,7 +7,7 @@ import finder from "../../../../public/macosicons/finder.png";
 import folder from "../../../../public/macosicons/folder.png";
 import xcode from "../../../../public/macosicons/xcode.png";
 
-function Taskbar() {
+function Dock() {
   return (
     <div className=" bg-white/55  w-fit h-[60px] self-center rounded-[25px] mb-2 pr-3 pl-3">
       <div className=" flex justify-center">
@@ -34,4 +34,4 @@ function Taskbar() {
   );
 }
 
-export default Taskbar;
+export default Dock;
