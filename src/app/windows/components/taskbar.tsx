@@ -2,15 +2,14 @@ import React from "react";
 import Image from "next/image";
 import { WinTime } from "@/app/main_interface/components/Time";
 
-import winstart from "../../../../public/windows/icons8-windows-11.svg";
-import winbell from "../../../../public/windows/icons8-notification.svg";
-import vscode from "../../../../public/windows/Visual Studio Code (VS Code).svg";
-import vs from "../../../../public/windows/Visual Studio.svg";
-import github from "../../../../public/windows/GitHub.svg";
-import blender from "../../../../public/windows/Blender.svg";
-import ae from "../../../../public/windows/After Effects.svg";
-import notification from "../../../../public/windows/notification-bell.png";
-
+import winstart from "../../../../public/windowsicons/icons8-windows-11.svg";
+import winbell from "../../../../public/windowsicons/icons8-notification.svg";
+import vscode from "../../../../public/windowsicons/Visual Studio Code (VS Code).svg";
+import vs from "../../../../public/windowsicons/Visual Studio.svg";
+import github from "../../../../public/windowsicons/GitHub.svg";
+import blender from "../../../../public/windowsicons/Blender.svg";
+import ae from "../../../../public/windowsicons/After Effects.svg";
+import notification from "../../../../public/windowsicons/notification-bell.png";
 
 // Taskbar Component
 const Taskbar = () => {
