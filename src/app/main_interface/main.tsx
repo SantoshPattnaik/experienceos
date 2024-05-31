@@ -1,15 +1,17 @@
 import Link from "next/link";
 import React from "react";
+import FullScreenButton from "../components/FullScreenButton";
 
 const Main = (): React.JSX.Element => {
 	return (
 		<main className="bg-gradient-to-tr from-slate-800 to-red-500 h-screen w-screen text-white">
+			<FullScreenButton />
 			<div className="p-20">
 				<div className="text-5xl">
 					<h1>EXPERIENCE OS</h1>
 				</div>
 				<i>
-					The fastest way to feel the UI of differtent Operating
+					The fastest way to feel the UI of different Operating
 					systems
 				</i>
 			</div>
