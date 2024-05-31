@@ -1,8 +1,8 @@
 # Heading
 
-| slno. | to be developed       |
-| ----- | --------------------- |
-| 1     | static ui of every os |
+| slno. | to be developed       | completed |
+| ----- | --------------------- | --------- |
+| 1     | static ui of every os | yes       |
 | 2     | main ui reactive      |
 | 3     | dropdown menus        |
 | 4     | time formatting       |
