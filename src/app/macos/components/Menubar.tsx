@@ -38,7 +38,7 @@ function Menubar() {
 								</ul>
 							</li>
 							<li
-								className="hover:cursor-pointer"
+								className="hover:cursor-pointer font-bold"
 								onClick={() => {
 									if (!finder_is_clicked) {
 										setFinderIsClicked(true);
@@ -137,47 +137,374 @@ function Menubar() {
 				</nav>
 			</div>
 			{apple_is_clicked && (
-				<div className="absolute bg-white/50 top-7 text-center rounded left-2 p-1">
+				<div className="absolute bg-white/50 top-7 rounded left-2 pt-1 pb-1 w-56">
 					<ul>
-						<li>About</li>
-						<li>Shutdown</li>
-						<li>Restart</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								About This Mac
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								System Preferences...
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								App Store...
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Recent Items
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Force Quit
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Sleep
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Restart
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Shutdown
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Lock Screen
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Log Out User...
+							</div>
+						</li>
 					</ul>
 				</div>
 			)}
 			{finder_is_clicked && (
-				<div className="absolute bg-white/50 top-7 text-center rounded left-10 p-1">
+				<div className="absolute bg-white/50 top-7 rounded left-10 pt-1 pb-1 w-56">
 					<ul>
-						<li>About</li>
-						<li>Shutdown</li>
-						<li>Restart</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								About Finder
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Preferences
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Empty Trash
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Hide Finder
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Hide Others
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show All
+							</div>
+						</li>
 					</ul>
 				</div>
 			)}
 			{file_is_clicked && (
-				<div className="absolute bg-white/50 top-7 text-center rounded left-24 p-1">
+				<div className="absolute bg-white/50 top-7 rounded left-28 pt-1 pb-1 w-56">
 					<ul>
-						<li>About</li>
-						<li>Shutdown</li>
-						<li>Restart</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								New Finder Window
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								New Folder
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								New Folder With Selection
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								New Smart Folder
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								New Tab
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Open
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Open With
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Print
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Close Window
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Get Info
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Rename
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Compress
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Duplicate
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Make Alias
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Quick Look
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show Original
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Add to Sidebar
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Move to Trash
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Eject
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Find
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Tags...
+							</div>
+						</li>
 					</ul>
 				</div>
 			)}
 			{edit_is_clicked && (
-				<div className="absolute bg-white/50 top-7 text-center rounded left-36 p-1">
+				<div className="absolute bg-white/50 top-7 rounded left-44 pt-1 pb-1 w-56">
 					<ul>
-						<li>About</li>
-						<li>Shutdown</li>
-						<li>Restart</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Undo
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Redo
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Cut
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Copy
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Paste
+							</div>
+						</li>
+						<li>
+							<div className="text-gray-500 hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Select All
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show Clipboard
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Start Dictation...
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Emoji & Symbols
+							</div>
+						</li>
 					</ul>
 				</div>
 			)}
 			{view_is_clicked && (
-				<div className="absolute bg-white/50 top-7 text-center rounded left-52 p-1">
+				<div className="absolute bg-white/50 top-7 rounded left-56 pt-1 pb-1 w-56">
 					<ul>
-						<li>About</li>
-						<li>Shutdown</li>
-						<li>Restart</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								As Icons
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								As List
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								As Columns
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								As Gallery
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Use Stacks
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Sort By
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Clean Up
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Clean Up By
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Hide Sidebar
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show Preview
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Hide Toolbar
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show All Tabs
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show Tab Bar
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show Path Bar
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show Status Bar
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Customize Toolbar
+							</div>
+							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show View Options
+							</div>
+						</li>
+						<li>
+							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+								Show Preview Options
+							</div>
+						</li>
 					</ul>
 				</div>
 			)}
