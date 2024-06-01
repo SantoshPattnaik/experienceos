@@ -17,6 +17,7 @@ import blender from "../../../../public/windowsicons/Blender.svg";
 import ae from "../../../../public/windowsicons/After Effects.svg";
 import notification from "../../../../public/windowsicons/notification-bell.png";
 import DesktopShortcut from "./DesktopShortcut";
+import Calendar from "@/app/main_interface/components/Calender";
 
 // import folder from "../../../../public/windowsicons/folder.png";
 // import thispc from "../../../../public/windowsicons/monitor.png";
@@ -27,6 +28,7 @@ function Desktop() {
   const [condition, setcondition] = useState("don't render");
   const [feedState, setFeedState] = useState("close");
   const [quickSettingsStates, setQuickSettingState] = useState("closed");
+  const [calender, setCalender] = useState("closed");
   return (
     <div className="w-fit">
       <DesktopShortcut />
@@ -36,6 +38,8 @@ function Desktop() {
       {condition == "render" ? <StartMenu /> : ""}
       {/*Quick Settings */}
       {quickSettingsStates == "open" ? <QuickSettings /> : ""}
+      {/*Calender*/}
+      {calender == "open" ? <Calendar /> : ""}
       <div>
         {/*task bar */}
         <footer className="text-center fixed w-full bottom-0 h-[64px] ">
@@ -48,6 +52,7 @@ function Desktop() {
                     setcondition("don't render");
                     setFeedState("open");
                     setQuickSettingState("close");
+                    setCalender("close");
                   } else {
                     setFeedState("close");
                   }
@@ -66,6 +71,7 @@ function Desktop() {
                         setcondition("render");
                         setFeedState("close");
                         setQuickSettingState("close");
+                        setCalender("close");
                       } else {
                         setcondition("don't render");
                       }
@@ -92,7 +98,21 @@ function Desktop() {
               </ul>
             </div>
             <div className=" hover:cursor-pointer text-[14px] font-bold pt-5">
-              <WinTime />
+              <button
+                className="border-none outline-none"
+                onClick={() => {
+                  if (calender == "close") {
+                    setcondition("don't render");
+                    setFeedState("close");
+                    setQuickSettingState("close");
+                    setCalender("open");
+                  } else {
+                    setCalender("close");
+                  }
+                }}
+              >
+                <WinTime />
+              </button>
             </div>
             <div className="flex justify-center align-middle pt-8 pl-2 pr-5">
               <ul className="size-fit">
