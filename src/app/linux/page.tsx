@@ -1,7 +1,12 @@
 import React from "react";
+import GNOME from "./components/GNOME";
 
 const page = () => {
-	return <div>Linux page</div>;
+  return (
+    <div className="linux h-[100vh] w-[100vw] flex flex-col">
+      <GNOME />
+    </div>
+  );
 };
 
 export default page;

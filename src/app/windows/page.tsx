@@ -1,7 +1,11 @@
 import React from "react";
-
-const page = () => {
-	return <div>Windows page</div>;
+import Desktop from "./components/Desktop";
+const page = (): React.JSX.Element => {
+	return (
+		<div className="windows w-[100vw] h-[100vh]">
+			<Desktop />
+		</div>
+	);
 };
 
 export default page;
