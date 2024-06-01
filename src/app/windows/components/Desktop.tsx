@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import { WinTime } from "@/app/main_interface/components/Time";
+import StartMenu from "./StartMenu";
+import Feeds from "./Feeds";
+import QuickSettings from "./QuickSettings";
 
 import winbell from "../../../../public/windowsicons/icons8-notification.svg";
 import winstart from "../../../../public/windowsicons/icons8-windows-11.svg";
@@ -13,47 +16,45 @@ import github from "../../../../public/windowsicons/GitHub.svg";
 import blender from "../../../../public/windowsicons/Blender.svg";
 import ae from "../../../../public/windowsicons/After Effects.svg";
 import notification from "../../../../public/windowsicons/notification-bell.png";
+import DesktopShortcut from "./DesktopShortcut";
 
-import folder from "../../../../public/windowsicons/folder.png";
-import thispc from "../../../../public/windowsicons/monitor.png";
-import recycle from "../../../../public/windowsicons/icons8-recycle-bin-96.png";
-import controlp from "../../../../public/windowsicons/icons8-control-panel-96.png";
-import StartMenu from "./StartMenu";
+// import folder from "../../../../public/windowsicons/folder.png";
+// import thispc from "../../../../public/windowsicons/monitor.png";
+// import recycle from "../../../../public/windowsicons/icons8-recycle-bin-96.png";
+// import controlp from "../../../../public/windowsicons/icons8-control-panel-96.png";
 
 function Desktop() {
   const [condition, setcondition] = useState("don't render");
+  const [feedState, setFeedState] = useState("close");
+  const [quickSettingsStates, setQuickSettingState] = useState("closed");
   return (
     <div className="w-fit">
-      <div className="flex flex-col h-fit w-fit p-3 text-white text-sm">
-        <div className="hover:cursor-pointer">
-          <Image src={folder} alt="folderico" height={64} width={64} />
-          <label htmlFor="folderico">New folder</label>
-        </div>
-        <div className="hover:cursor-pointer">
-          <Image src={thispc} alt="pcico" height={64} width={64} />
-          <label htmlFor="pcico">This PC</label>
-        </div>
-        <div className="hover:cursor-pointer">
-          <Image src={controlp} alt="panico" height={64} width={64} />
-          <label htmlFor="panico">Control Panel</label>
-        </div>
-        <div className="hover:cursor-pointer">
-          <Image src={recycle} alt="binico" height={64} width={64} />
-          <label htmlFor="binico">Recycle Bin</label>
-        </div>
-        <div className="hover:cursor-pointer">
-          <Image src={folder} alt="folderico" height={64} width={64} />
-          <label htmlFor="folderico">jai kala</label>
-        </div>
-      </div>
+      <DesktopShortcut />
+      {/* feeds */}
+      {feedState == "open" ? <Feeds /> : ""}
       {/*start menu */}
       {condition == "render" ? <StartMenu /> : ""}
+      {/*Quick Settings */}
+      {quickSettingsStates == "open" ? <QuickSettings /> : ""}
       <div>
         {/*task bar */}
         <footer className="text-center fixed w-full bottom-0 h-[64px] ">
           <div className="text-center text-surface text-white backdrop-blur-md bg-black backdrop-opacity-85 bg-opacity-70 flex h-fit">
             <div className="hover:cursor-pointer">
-              <Image src={winbell} alt="" height={64} width={64} />
+              <button
+                className="border-none outline-none"
+                onClick={() => {
+                  if (feedState == "close") {
+                    setcondition("don't render");
+                    setFeedState("open");
+                    setQuickSettingState("close");
+                  } else {
+                    setFeedState("close");
+                  }
+                }}
+              >
+                <Image src={winbell} alt="" height={64} width={64} />
+              </button>
             </div>
             <div className="flex-grow flex justify-center">
               <ul className="flex justify-center gap-5 self-center">
@@ -63,6 +64,8 @@ function Desktop() {
                     onClick={() => {
                       if (condition == "don't render") {
                         setcondition("render");
+                        setFeedState("close");
+                        setQuickSettingState("close");
                       } else {
                         setcondition("don't render");
                       }
