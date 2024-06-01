@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import FullScreenButton from "../components/FullScreenButton";
+import FullScreenButton from "./components/FullScreenButton";
 
 const Main = (): React.JSX.Element => {
 	return (
