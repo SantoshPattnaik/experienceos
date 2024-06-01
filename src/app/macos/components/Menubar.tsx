@@ -30,6 +30,13 @@ function Menubar() {
 										onClick={() => {
 											if (!apple_is_clicked) {
 												setAppleIsClicked(true);
+												setEditIsClicked(false);
+												setFileIsClicked(false);
+												setFinderIsClicked(false);
+												setGoIsClicked(false);
+												setHelpIsClicked(false);
+												setViewIsClicked(false);
+												setWindowIsClicked(false);
 											} else {
 												setAppleIsClicked(false);
 											}
@@ -42,6 +49,13 @@ function Menubar() {
 								onClick={() => {
 									if (!finder_is_clicked) {
 										setFinderIsClicked(true);
+										setAppleIsClicked(false);
+										setEditIsClicked(false);
+										setFileIsClicked(false);
+										setGoIsClicked(false);
+										setHelpIsClicked(false);
+										setViewIsClicked(false);
+										setWindowIsClicked(false);
 									} else {
 										setFinderIsClicked(false);
 									}
@@ -54,6 +68,13 @@ function Menubar() {
 								onClick={() => {
 									if (!file_is_clicked) {
 										setFileIsClicked(true);
+										setFinderIsClicked(false);
+										setAppleIsClicked(false);
+										setEditIsClicked(false);
+										setGoIsClicked(false);
+										setHelpIsClicked(false);
+										setViewIsClicked(false);
+										setWindowIsClicked(false);
 									} else {
 										setFileIsClicked(false);
 									}
@@ -66,6 +87,13 @@ function Menubar() {
 								onClick={() => {
 									if (!edit_is_clicked) {
 										setEditIsClicked(true);
+										setFileIsClicked(false);
+										setFinderIsClicked(false);
+										setAppleIsClicked(false);
+										setGoIsClicked(false);
+										setHelpIsClicked(false);
+										setViewIsClicked(false);
+										setWindowIsClicked(false);
 									} else {
 										setEditIsClicked(false);
 									}
@@ -78,6 +106,13 @@ function Menubar() {
 								onClick={() => {
 									if (!view_is_clicked) {
 										setViewIsClicked(true);
+										setEditIsClicked(false);
+										setFileIsClicked(false);
+										setFinderIsClicked(false);
+										setAppleIsClicked(false);
+										setGoIsClicked(false);
+										setHelpIsClicked(false);
+										setWindowIsClicked(false);
 									} else {
 										setViewIsClicked(false);
 									}
@@ -90,6 +125,13 @@ function Menubar() {
 								onClick={() => {
 									if (!go_is_clicked) {
 										setGoIsClicked(true);
+										setViewIsClicked(false);
+										setEditIsClicked(false);
+										setFileIsClicked(false);
+										setFinderIsClicked(false);
+										setAppleIsClicked(false);
+										setHelpIsClicked(false);
+										setWindowIsClicked(false);
 									} else {
 										setGoIsClicked(false);
 									}
@@ -102,6 +144,13 @@ function Menubar() {
 								onClick={() => {
 									if (!window_is_clicked) {
 										setWindowIsClicked(true);
+										setGoIsClicked(false);
+										setViewIsClicked(false);
+										setEditIsClicked(false);
+										setFileIsClicked(false);
+										setFinderIsClicked(false);
+										setAppleIsClicked(false);
+										setHelpIsClicked(false);
 									} else {
 										setWindowIsClicked(false);
 									}
@@ -114,6 +163,13 @@ function Menubar() {
 								onClick={() => {
 									if (!help_is_clicked) {
 										setHelpIsClicked(true);
+										setWindowIsClicked(false);
+										setGoIsClicked(false);
+										setViewIsClicked(false);
+										setEditIsClicked(false);
+										setFileIsClicked(false);
+										setFinderIsClicked(false);
+										setAppleIsClicked(false);
 									} else {
 										setHelpIsClicked(false);
 									}
