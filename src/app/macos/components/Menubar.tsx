@@ -17,6 +17,17 @@ function Menubar() {
 	const [window_is_clicked, setWindowIsClicked] = useState<boolean>(false);
 	const [help_is_clicked, setHelpIsClicked] = useState<boolean>(false);
 	const [time_is_clicked, setTimeIsClicked] = useState<boolean>(false);
+	const [body_is_clicked, setBodyIsClicked] = useState<boolean>(false);
+
+	// document.body.addEventListener("click", (event) => {
+	// 	// console.log(event.target);
+	// 	let target=event.target
+	// 	if (
+	// 		(target as unknown).includes("")
+	// 	) {
+	// 		setBodyIsClicked(false);
+	// 	}
+	// });
 
 	return (
 		<>
@@ -199,25 +210,27 @@ function Menubar() {
 							<li>
 								<IoMdSearch className="text-2xl hover:cursor-pointer" />
 							</li>
-							<div
-								onClick={() => {
-									if (!time_is_clicked) {
-										setTimeIsClicked(true);
-										setHelpIsClicked(false);
-										setWindowIsClicked(false);
-										setGoIsClicked(false);
-										setViewIsClicked(false);
-										setEditIsClicked(false);
-										setFileIsClicked(false);
-										setFinderIsClicked(false);
-										setAppleIsClicked(false);
-									} else {
-										setTimeIsClicked(false);
-									}
-								}}
-							>
-								<Time />
-							</div>
+							<li>
+								<div
+									onClick={() => {
+										if (!time_is_clicked) {
+											setTimeIsClicked(true);
+											setHelpIsClicked(false);
+											setWindowIsClicked(false);
+											setGoIsClicked(false);
+											setViewIsClicked(false);
+											setEditIsClicked(false);
+											setFileIsClicked(false);
+											setFinderIsClicked(false);
+											setAppleIsClicked(false);
+										} else {
+											setTimeIsClicked(false);
+										}
+									}}
+								>
+									<Time />
+								</div>
+							</li>
 						</ul>
 					</div>
 				</nav>
