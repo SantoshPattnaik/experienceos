@@ -467,22 +467,22 @@ function Menubar() {
 				<div className="absolute bg-white/50 top-7 rounded left-56 pt-1 pb-1 w-56">
 					<ul>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								As Icons
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								As List
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								As Columns
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								As Gallery
 							</div>
 							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
@@ -498,55 +498,55 @@ function Menubar() {
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Clean Up
 							</div>
 							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Clean Up By
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Hide Sidebar
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Show Preview
 							</div>
 							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Hide Toolbar
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Show All Tabs
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Show Tab Bar
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Show Path Bar
 							</div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Show Status Bar
 							</div>
 							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
 						</li>
 						<li>
-							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
+							<div className="text-gray-500 hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2">
 								Customize Toolbar
 							</div>
 							<div className="border-slate-500 border-b-2 w-[216px] ml-1 rounded-2xl"></div>
