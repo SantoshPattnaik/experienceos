@@ -210,27 +210,25 @@ function Menubar() {
 							<li>
 								<IoMdSearch className="text-2xl hover:cursor-pointer" />
 							</li>
-							<li>
-								<div
-									onClick={() => {
-										if (!time_is_clicked) {
-											setTimeIsClicked(true);
-											setHelpIsClicked(false);
-											setWindowIsClicked(false);
-											setGoIsClicked(false);
-											setViewIsClicked(false);
-											setEditIsClicked(false);
-											setFileIsClicked(false);
-											setFinderIsClicked(false);
-											setAppleIsClicked(false);
-										} else {
-											setTimeIsClicked(false);
-										}
-									}}
-								>
-									<Time />
-								</div>
-							</li>
+							<div
+								onClick={() => {
+									if (!time_is_clicked) {
+										setTimeIsClicked(true);
+										setHelpIsClicked(false);
+										setWindowIsClicked(false);
+										setGoIsClicked(false);
+										setViewIsClicked(false);
+										setEditIsClicked(false);
+										setFileIsClicked(false);
+										setFinderIsClicked(false);
+										setAppleIsClicked(false);
+									} else {
+										setTimeIsClicked(false);
+									}
+								}}
+							>
+								<Time />
+							</div>
 						</ul>
 					</div>
 				</nav>
