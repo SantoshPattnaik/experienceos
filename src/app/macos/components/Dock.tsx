@@ -15,12 +15,12 @@ function Dock() {
 	const [launchPad, setLaunchPad] = useState("");
 	return (
 		<div className="flex flex-col align-middle place-items-center ">
-			<div className="bottom-[70px] absolute">
+			<div className="bottom-[70px] absolute  h-[87%]">
 				{/* Launchpad */}
 				{launchPad == "open" ? <LaunchPad /> : ""}
 			</div>
 			<div className=" bg-white/50 w-fit h-[60px] self-center rounded-[25px] pr-3 pl-3 bottom-2 absolute">
-				<div className=" flex justify-center h-[87%]">
+				<div className=" flex justify-center">
 					<ul className="flex">
 						{/*add more icons here */}
 						<li>
