@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { useState } from "react";
@@ -13,8 +14,8 @@ import LaunchPad from "./LaunchPad";
 function Dock() {
   const [launchPad, setLaunchPad] = useState("");
   return (
-    <div className="flex flex-col align-middle place-items-center ">
-      <div className="bottom-[70px] absolute">
+    <div className="flex flex-col align-middle place-items-center">
+      <div className="bottom-[70px] absolute h-[87%]">
         {/* Launchpad */}
         {launchPad == "open" ? <LaunchPad /> : ""}
       </div>
