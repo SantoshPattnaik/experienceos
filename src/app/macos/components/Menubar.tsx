@@ -1,10 +1,11 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaApple, FaWifi } from "react-icons/fa";
 import { Time } from "../../main_interface/components/Time";
 import { IoMdBluetooth, IoMdSearch } from "react-icons/io";
 import { FaDisplay } from "react-icons/fa6";
 import { TiBatteryCharge } from "react-icons/ti";
+import Calender from "../../main_interface/components/Calender";
 
 function Menubar() {
 	const [apple_is_clicked, setAppleIsClicked] = useState<boolean>(false);
@@ -15,6 +16,7 @@ function Menubar() {
 	const [go_is_clicked, setGoIsClicked] = useState<boolean>(false);
 	const [window_is_clicked, setWindowIsClicked] = useState<boolean>(false);
 	const [help_is_clicked, setHelpIsClicked] = useState<boolean>(false);
+	const [time_is_clicked, setTimeIsClicked] = useState<boolean>(false);
 
 	return (
 		<>
@@ -182,12 +184,40 @@ function Menubar() {
 					<div className="status justify-end flex-grow mr-1">
 						<ul className="flex space-x-2 text-[17px] font-medium justify-end ">
 							{/* Time Viewer */}
-							<FaWifi className="text-2xl hover:cursor-pointer" />
-							<IoMdBluetooth className="text-2xl hover:cursor-pointer" />
-							<FaDisplay className="text-2xl hover:cursor-pointer" />
-							<TiBatteryCharge className="text-2xl hover:cursor-pointer" />
-							<IoMdSearch className="text-2xl hover:cursor-pointer" />
-							<Time />
+							<li>
+								<FaWifi className="text-2xl hover:cursor-pointer" />
+							</li>
+							<li>
+								<IoMdBluetooth className="text-2xl hover:cursor-pointer" />
+							</li>
+							<li>
+								<FaDisplay className="text-2xl hover:cursor-pointer" />
+							</li>
+							<li>
+								<TiBatteryCharge className="text-2xl hover:cursor-pointer" />
+							</li>
+							<li>
+								<IoMdSearch className="text-2xl hover:cursor-pointer" />
+							</li>
+							<div
+								onClick={() => {
+									if (!time_is_clicked) {
+										setTimeIsClicked(true);
+										setHelpIsClicked(false);
+										setWindowIsClicked(false);
+										setGoIsClicked(false);
+										setViewIsClicked(false);
+										setEditIsClicked(false);
+										setFileIsClicked(false);
+										setFinderIsClicked(false);
+										setAppleIsClicked(false);
+									} else {
+										setTimeIsClicked(false);
+									}
+								}}
+							>
+								<Time />
+							</div>
 						</ul>
 					</div>
 				</nav>
@@ -727,6 +757,9 @@ function Menubar() {
 					</ul>
 				</div>
 			)}
+			<div className="absolute bg-white/50 w-fit rounded right-0 mt-7 mr-1">
+				{time_is_clicked && <Calender />}
+			</div>
 		</>
 	);
 }
