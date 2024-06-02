@@ -7,7 +7,7 @@ function Notification() {
       <div className="max-w-md mx-auto p-4 bg-black/50 text-white mb-4 rounded-md min-h-72 backdrop-blur-md backdrop-opacity-90">
         Notification
       </div>
-      <div className="">
+      <div className="bg-black/50 text-white backdrop-blur-md backdrop-opacity-90">
         <Calendar />
       </div>
     </>
