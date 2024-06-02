@@ -16,7 +16,7 @@ const Time = () => {
 
 	return (
 		<>
-			<li className="hover:cursor-pointer">
+			<li className="hover:cursor-pointer time">
 				{dateArr[0] +
 					" " +
 					dateArr[1] +
