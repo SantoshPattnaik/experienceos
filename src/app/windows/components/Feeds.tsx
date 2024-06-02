@@ -1,6 +1,6 @@
 function Feeds() {
   return (
-    <div className=" bottom-[70px] text-white h-[70vh] w-2/5 absolute backdrop-blur-md backdrop-opacity-90">
+    <div className=" bottom-[70px] text-white h-[90vh] w-2/3 absolute bg-black/50 backdrop-blur-md backdrop-opacity-90 ml-4">
       Thi is the feed area
     </div>
   );

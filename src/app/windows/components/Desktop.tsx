@@ -7,6 +7,7 @@ import { WinTime } from "@/app/main_interface/components/Time";
 import StartMenu from "./StartMenu";
 import Feeds from "./Feeds";
 import QuickSettings from "./QuickSettings";
+import Notification from "./Notification";
 
 import winbell from "../../../../public/windowsicons/icons8-notification.svg";
 import winstart from "../../../../public/windowsicons/icons8-windows-11.svg";
@@ -17,7 +18,6 @@ import blender from "../../../../public/windowsicons/Blender.svg";
 import ae from "../../../../public/windowsicons/After Effects.svg";
 import notification from "../../../../public/windowsicons/notification-bell.png";
 import DesktopShortcut from "./DesktopShortcut";
-import Calendar from "@/app/main_interface/components/Calender";
 
 // import folder from "../../../../public/windowsicons/folder.png";
 // import thispc from "../../../../public/windowsicons/monitor.png";
@@ -39,7 +39,10 @@ function Desktop() {
       {/*Quick Settings */}
       {quickSettingsStates == "open" ? <QuickSettings /> : ""}
       {/*Calender*/}
-      {calender == "open" ? <Calendar /> : ""}
+      <div className="right-4 bottom-[70px] absolute">
+        {" "}
+        {calender == "open" ? <Notification /> : ""}
+      </div>
       <div>
         {/*task bar */}
         <footer className="text-center fixed w-full bottom-0 h-[64px] ">

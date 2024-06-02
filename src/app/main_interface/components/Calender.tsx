@@ -28,7 +28,7 @@ const Calendar = () => {
   });
 
   return (
-    <div className="max-w-md mx-auto p-4 bg-black text-white">
+    <div className="max-w-md mx-auto p-4 bg-black/50 text-white rounded-md backdrop-blur-md backdrop-opacity-90">
       <div className="flex justify-between mb-4">
         <button onClick={prevMonth}>prev</button>
         <h2 className="text-xl font-semibold">
