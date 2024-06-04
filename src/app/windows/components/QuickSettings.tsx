@@ -1,5 +1,5 @@
 function QuickSettings() {
-  return <div>QuickSettings</div>;
+  return <div className="h-[500px] w-[300px] bg-black/50"></div>;
 }
 
 export default QuickSettings;

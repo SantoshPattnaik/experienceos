@@ -29,6 +29,7 @@ function Desktop() {
   const [feedState, setFeedState] = useState("close");
   const [quickSettingsStates, setQuickSettingState] = useState("closed");
   const [calender, setCalender] = useState("closed");
+  const [chevron, setChevron] = useState("up")
   return (
     <div className="w-fit">
       <DesktopShortcut />
@@ -99,6 +100,35 @@ function Desktop() {
                   <Image src={ae} alt="" height={32} width={32} />
                 </li>
               </ul>
+            </div>
+            {/* Background tasks quick qccess */}
+            <div className="pt-5 mr-4">
+              <div onClick={() => {
+                if (chevron == "up") {
+                  setChevron("down")
+                } else {
+                  setChevron("up")
+                }
+              }}
+              >
+                {chevron == "down" ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+                }
+              </div>
+            </div>
+            {/*Quick settings */}
+            <div>
+              <div className="pt-5 mr-4 w-fit flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                </svg>
+              </div>
             </div>
             <div className=" hover:cursor-pointer text-[14px] font-bold pt-5">
               <button
