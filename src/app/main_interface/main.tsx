@@ -4,7 +4,7 @@ import FullScreenButton from "./components/FullScreenButton";
 
 const Main = (): React.JSX.Element => {
 	return (
-		<main className="bg-gradient-to-tr from-slate-800 to-red-500 h-screen w-screen text-white">
+		<main className="bg-gradient-to-bl from-gray-700 via-gray-900 to-black h-screen w-screen text-white">
 			<FullScreenButton />
 			<div className="p-20">
 				<div className="text-5xl">
@@ -37,6 +37,14 @@ const Main = (): React.JSX.Element => {
 						</div>
 					</Link>
 				</div>
+			</div>
+			<div className="bottom-4 absolute w-full h-fit flex justify-center">
+				<Link
+					href={"/about"}
+					className="outline-none bg-white text-black rounded-2xl hover:bg-blue-700 hover:text-white"
+				>
+					About 😎
+				</Link>
 			</div>
 		</main>
 	);

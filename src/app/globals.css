@@ -44,3 +44,11 @@ body {
 	background-image: url("../../public/Jammy-Jellyfish_WP_1920x1080.jpg");
 	background-size: cover;
 }
+.ashutosh{
+  background-image: url("../../public/about/ashutosh.jpg");
+  background-size: cover;
+}
+.santosh{
+  background-image: url("../../public/about/santosh.jpg");
+  background-size: cover;
+}
