@@ -18,12 +18,16 @@ function DesktopShortcut() {
 				className="hover:cursor-pointer"
 				onMouseOver={() => {
 					if (!isShowing) {
-						setIsShowing(true);
+						setTimeout(() => {
+							setIsShowing(true);
+						}, 900);
 					}
 					console.log("hover working");
 				}}
 				onMouseOut={() => {
-					setIsShowing(false);
+					setTimeout(() => {
+						setIsShowing(false);
+					}, 900);
 				}}
 			>
 				<Image src={folder} alt="folderico" height={64} width={64} />
