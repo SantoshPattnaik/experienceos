@@ -19,11 +19,11 @@ function Dock() {
 				{/* Launchpad */}
 				{launchPad == "open" ? <LaunchPad /> : ""}
 			</div>
-			<div className=" bg-white/50 w-fit h-[60px] self-center rounded-[25px] pr-3 pl-3 bottom-2 absolute">
+			<div className=" bg-white/50 min-fit h-[60px] self-center rounded-[25px] pr-3 pl-3 bottom-2 absolute">
 				<div className=" flex justify-center">
 					<ul className="flex">
 						{/*add more icons here */}
-						<li>
+						<li className="transition  duration-300 hover:scale-105 hover:z-50 hover:-translate-y-10">
 							<Image
 								src={calender}
 								alt=""
@@ -31,7 +31,7 @@ function Dock() {
 								height={64}
 							/>
 						</li>
-						<li>
+						<li className="transition  duration-300 hover:scale-105 hover:z-50 hover:-translate-y-10">
 							<Image
 								src={downloads}
 								alt=""
@@ -39,16 +39,16 @@ function Dock() {
 								height={64}
 							/>
 						</li>
-						<li>
+						<li className="transition  duration-300 hover:scale-105 hover:z-50 hover:-translate-y-10">
 							<Image src={xcode} alt="" width={64} height={64} />
 						</li>
-						<li>
+						<li className="transition  duration-300 hover:scale-105 hover:z-50 hover:-translate-y-10">
 							<Image src={finder} alt="" width={64} height={64} />
 						</li>
-						<li>
+						<li className="transition  duration-300 hover:scale-105 hover:z-50 hover:-translate-y-10">
 							<Image src={folder} alt="" width={64} height={64} />
 						</li>
-						<li>
+						<li className="transition  duration-300 hover:scale-105 hover:z-50 hover:-translate-y-10">
 							<button
 								className="outline-none mb-2"
 								onClick={() => {
