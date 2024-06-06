@@ -22,7 +22,6 @@ function DesktopShortcut() {
 							setIsShowing(true);
 						}, 900);
 					}
-					console.log("hover working");
 				}}
 				onMouseOut={() => {
 					setTimeout(() => {
