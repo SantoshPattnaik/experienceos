@@ -39,11 +39,10 @@ const Footer = () => {
 				{calender == "open" ? <Notification /> : ""}
 			</div>
 			{/* Taskbar */}
-			<footer className="text-center fixed w-full bottom-0 h-[64px] ">
+			<footer className="text-center fixed w-full bottom-0 ">
 				<div className="text-center text-surface text-white backdrop-blur-md bg-black backdrop-opacity-85 bg-opacity-70 flex h-fit">
 					<div className="hover:cursor-pointer">
-						<button
-							className="border-none outline-none"
+						<div
 							onClick={() => {
 								if (feedState == "close") {
 									setcondition("don't render");
@@ -58,16 +57,15 @@ const Footer = () => {
 							<Image
 								src={winbell}
 								alt=""
-								height={64}
-								width={64}
+								height={60}
+								width={60}
 							/>
-						</button>
+						</div>
 					</div>
 					<div className="flex-grow flex justify-center">
-						<ul className="flex justify-center gap-5 self-center">
+						<ul className="flex gap-5 self-center">
 							<li>
-								<button
-									className="border-none outline-none"
+								<div
 									onClick={() => {
 										if (condition == "don't render") {
 											setcondition("render");
@@ -85,7 +83,7 @@ const Footer = () => {
 										height={32}
 										width={32}
 									/>
-								</button>
+								</div>
 							</li>
 							<li className="hover:cursor-pointer">
 								<Image
@@ -198,9 +196,9 @@ const Footer = () => {
 							</svg>
 						</div>
 					</div>
-					<div className=" hover:cursor-pointer text-[14px] font-bold pt-5">
-						<button
-							className="border-none outline-none"
+					<div className="hover:cursor-pointer text-[14px] font-bold mt-3 mr-3">
+						<div
+							className=""
 							onClick={() => {
 								if (calender == "close") {
 									setcondition("don't render");
@@ -213,16 +211,16 @@ const Footer = () => {
 							}}
 						>
 							<WinTime />
-						</button>
+						</div>
 					</div>
-					<div className="flex justify-center align-middle pt-8 pl-2 pr-5">
-						<ul className="size-fit">
-							<li className="hover:cursor-pointer">
+					<div className="flex justify-center mt-6">
+						<ul>
+							<li className="hover:cursor-pointer mr-4">
 								<Image
 									src={notification}
 									alt=""
-									height={16}
-									width={16}
+									height={19}
+									width={17}
 								/>
 							</li>
 						</ul>
