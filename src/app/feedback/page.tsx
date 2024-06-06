@@ -1,10 +1,12 @@
-import React from 'react'
-import FeedbackForm from './components/FeedbackForm'
+import React from "react";
+import FeedbackForm from "./components/FeedbackForm";
 
 function page() {
-    return (
-        <div className='h-screen w-screen'><FeedbackForm /></div>
-    )
+	return (
+		<div className="h-screen w-screen">
+			<FeedbackForm />
+		</div>
+	);
 }
 
-export default page
+export default page;
