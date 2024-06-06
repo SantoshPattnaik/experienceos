@@ -19,7 +19,7 @@ function Dock() {
 				{/* Launchpad */}
 				{launchPad == "open" ? <LaunchPad /> : ""}
 			</div>
-			<div className=" bg-white/50 min-fit h-[60px] self-center rounded-[25px] pr-3 pl-3 bottom-2 absolute transition duration-500 hover:scale-x-105">
+			<div className=" bg-white/50 min-fit h-[60px] self-center rounded-[25px] pr-3 pl-3 bottom-2 absolute transition duration-300 hover:scale-x-105">
 				<div className=" flex justify-center">
 					<ul className="flex">
 						{/*add more icons here */}
