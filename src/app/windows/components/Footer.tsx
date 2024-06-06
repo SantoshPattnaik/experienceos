@@ -25,6 +25,7 @@ const Footer = () => {
 		useState<string>("closed");
 	const [calender, setCalender] = useState<string>("closed");
 	const [chevron, setChevron] = useState<string>("up");
+	const [trayShow, setTrayShow] = useState<boolean>(false);
 	return (
 		<>
 			{/* feeds */}
@@ -123,8 +124,10 @@ const Footer = () => {
 							onClick={() => {
 								if (chevron == "up") {
 									setChevron("down");
+									setTrayShow(true);
 								} else {
 									setChevron("up");
+									setTrayShow(false);
 								}
 							}}
 						>
@@ -160,6 +163,47 @@ const Footer = () => {
 								</svg>
 							)}
 						</div>
+						{/* System Tray */}
+						{trayShow && (
+							<div className="absolute bottom-16 bg-black/50 pl-3 pr-3 pt-3 pb-3 rounded right-52">
+								<ul>
+									<li className="hover:cursor-pointer flex space-x-4">
+										<Image
+											src={vscode}
+											alt=""
+											height={18}
+											width={18}
+										/>
+										<Image
+											src={github}
+											alt=""
+											height={18}
+											width={18}
+										/>
+										<Image
+											src={blender}
+											alt=""
+											height={18}
+											width={18}
+										/>
+									</li>
+									<li className="hover:cursor-pointer flex space-x-4 mt-3">
+										<Image
+											src={vs}
+											alt=""
+											height={18}
+											width={18}
+										/>
+										<Image
+											src={ae}
+											alt=""
+											height={18}
+											width={18}
+										/>
+									</li>
+								</ul>
+							</div>
+						)}
 					</div>
 					{/*Quick settings */}
 					<div>
