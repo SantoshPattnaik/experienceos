@@ -54,7 +54,7 @@ body {
 }
 
 .wndows_AnimateFromBottom {
-  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation: slideInFromTop 200ms linear;
 }
 
 /* @keyframes popup{
@@ -70,11 +70,20 @@ body {
 
 @keyframes slideInFromTop {
   0% {
-    transform: translateY(670px);
+    transform: translateY(100%);
     opactity: 0;
   }
+  25%{
+    transform: translateY(75%);
+  }
+  50%{
+    transform: translateY(50%);
+  }
+  75%{
+    transform: translateY(25%);
+  }
   100% {
-    transform: translateY(-70px);
+    transform: translateY(0%);
     opacity: 1;
   }
 }
