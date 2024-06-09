@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-import winbell from "../../../../public/windowsicons/icons8-notification.svg";
+import winbell from "../../../../public/windowsicons/uiicons/Windows-11-widgets-icon.png";
 import winstart from "../../../../public/windowsicons/icons8-windows-11.svg";
 import vscode from "../../../../public/windowsicons/Visual Studio Code (VS Code).svg";
 import vs from "../../../../public/windowsicons/Visual Studio.svg";
@@ -42,7 +42,7 @@ const Footer = () => {
 			{/* Taskbar */}
 			<footer className="text-center fixed w-full bottom-0 ">
 				<div className="text-center text-surface text-white backdrop-blur-md bg-black backdrop-opacity-85 bg-opacity-70 flex h-fit">
-					<div className="hover:cursor-pointer">
+					<div>
 						<div
 							onClick={() => {
 								if (feedState == "close") {
@@ -55,12 +55,15 @@ const Footer = () => {
 								}
 							}}
 						>
-							<Image
-								src={winbell}
-								alt=""
-								height={60}
-								width={60}
-							/>
+							<div className="bg-black/20 text-center w-56">
+								<Image
+									src={winbell}
+									alt=""
+									height={63}
+									width={63}
+									className="hover:cursor-pointer pl-4 pt-1 pb-1"
+								/>
+							</div>
 						</div>
 					</div>
 					<div className="flex-grow flex justify-center">
