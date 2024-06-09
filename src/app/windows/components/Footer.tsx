@@ -168,7 +168,7 @@ const Footer = () => {
 						</div>
 						{/* System Tray */}
 						{trayShow && (
-							<div className="absolute bottom-16 bg-black/50 pl-3 pr-3 pt-3 pb-3 rounded right-52">
+							<div className="wndows_AnimateFromBottom absolute bottom-16 bg-black/50 pl-3 pr-3 pt-3 pb-3 rounded right-52">
 								<ul>
 									<li className="hover:cursor-pointer flex space-x-4">
 										<Image

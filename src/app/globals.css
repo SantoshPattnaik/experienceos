@@ -54,21 +54,11 @@ body {
 }
 
 .wndows_AnimateFromBottom {
-  animation: slideInFromTop 200ms linear;
+  animation: slideInFromBottom 200ms linear;
 }
 
-/* @keyframes popup{
-  from{
-    transform: translateY(0);
-    opacity: 0;
-  }
-  to{
-    transform: translatey(100);
-    opacity: 1;
-  }
-} */
 
-@keyframes slideInFromTop {
+@keyframes slideInFromBottom {
   0% {
     transform: translateY(100%);
     opactity: 0;
