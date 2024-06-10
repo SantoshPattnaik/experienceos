@@ -26,8 +26,8 @@ const LoadingScreen = () => {
 			</div>
 
 			<div
-				className={`bg-black h-full flex justify-center${
-					welcome ? "hidden" : ""
+				className={`${
+					welcome ? "hidden" : "bg-black h-full flex justify-center"
 				}`}
 			>
 				<video width={700} autoPlay muted onEnded={videoEnd}>
