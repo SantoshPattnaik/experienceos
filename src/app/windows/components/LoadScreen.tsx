@@ -4,20 +4,11 @@ import Desktop from "./Desktop";
 import { useState } from "react";
 
 function LoadScreen() {
-	const [play, setPlay] = useState<boolean>(false);
-
-	const Play = () => {
-		setPlay(true);
-	};
-
 	return (
 		<>
-			<div className={`${play ? "h-full w-full" : "hidden"}`}>
+			<div className="h-full w-full">
 				<Desktop />
-			</div>
-
-			<div className={`${play ? "-z-50" : "hidden"}`}>
-				<audio autoPlay onLoad={Play}>
+				<audio autoPlay>
 					<source src="/windowsicons/Startup.mp3" />
 				</audio>
 			</div>

@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 function Desktop() {
 	return (
-		<div>
+		<div className="h-screen w-screen">
 			<DesktopShortcut />
 			<Footer />
 		</div>
