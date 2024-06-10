@@ -7,7 +7,7 @@ import Link from "next/link";
 function page() {
 	return (
 		<div className="bg-gradient-to-bl from-gray-700 via-gray-900 to-black h-screen w-screen text-center text-white flex flex-col place-items-center">
-			<div className="flex gap-5">
+			<div className=" mt-5 flex gap-5 hover:outline rounded-3xl">
 				<Link href={"/"}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@ function page() {
 						viewBox="0 0 24 24"
 						strokeWidth={1.5}
 						stroke="currentColor"
-						className="size-6 hover:outline rounded-full"
+						className="size-6 "
 					>
 						<path
 							strokeLinecap="round"
