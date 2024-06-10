@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
 import Desktop from "./Desktop";
-import { useState } from "react";
 
 function LoadScreen() {
 	return (
