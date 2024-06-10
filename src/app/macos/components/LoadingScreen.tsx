@@ -21,7 +21,11 @@ const LoadingScreen = () => {
 
 	return (
 		<>
-			<div className={`${welcome ? "h-full visible" : "hidden"}`}>
+			<div
+				className={`${
+					welcome ? "h-full visible macos_fadein" : "hidden"
+				}`}
+			>
 				<Desktop />
 			</div>
 
