@@ -1,6 +1,6 @@
 function Feeds() {
 	return (
-		<div className="wndows_AnimateFromBottom bottom-[70px] text-white h-[90vh] w-2/3 absolute bg-black/50 backdrop-blur-md backdrop-opacity-90 ml-4">
+		<div className="wndows_AnimateFromBottom bottom-16 text-white h-[90vh] w-2/3 absolute backdrop-blur-3xl ml-4">
 			Thi is the feed area
 		</div>
 	);

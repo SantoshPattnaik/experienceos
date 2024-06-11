@@ -29,23 +29,23 @@ const Footer = () => {
 	return (
 		<>
 			{/* feeds */}
-			{feedState == "open" ? <Feeds /> : ""}
+			{feedState === "open" ? <Feeds /> : ""}
 			{/*start menu */}
-			{condition == "render" ? <StartMenu /> : ""}
+			{condition === "render" ? <StartMenu /> : ""}
 			{/*Quick Settings */}
-			{quickSettingsStates == "open" ? <QuickSettings /> : ""}
+			{quickSettingsStates === "open" ? <QuickSettings /> : ""}
 			{/*Calender*/}
 			<div className="right-4 bottom-[70px] absolute">
 				{" "}
-				{calender == "open" ? <Notification /> : ""}
+				{calender === "open" ? <Notification /> : ""}
 			</div>
 			{/* Taskbar */}
 			<footer className="text-center fixed w-full bottom-0 ">
-				<div className="text-center text-surface text-white backdrop-blur-md bg-black backdrop-opacity-85 bg-opacity-70 flex h-fit">
+				<div className="text-center text-surface text-white backdrop-blur-3xl flex h-fit">
 					<div>
 						<div
 							onClick={() => {
-								if (feedState == "close") {
+								if (feedState === "close") {
 									setcondition("don't render");
 									setFeedState("open");
 									setQuickSettingState("close");
@@ -55,7 +55,7 @@ const Footer = () => {
 								}
 							}}
 						>
-							<div className="bg-black/20 text-center w-56">
+							<div className=" text-center w-56">
 								<Image
 									src={winbell}
 									alt=""
@@ -68,10 +68,10 @@ const Footer = () => {
 					</div>
 					<div className="flex-grow flex justify-center">
 						<ul className="flex gap-5 self-center">
-							<li>
+							<li className=" hover:cursor-pointer">
 								<div
 									onClick={() => {
-										if (condition == "don't render") {
+										if (condition === "don't render") {
 											setcondition("render");
 											setFeedState("close");
 											setQuickSettingState("close");
@@ -125,7 +125,7 @@ const Footer = () => {
 					<div className="pt-5 mr-4">
 						<div
 							onClick={() => {
-								if (chevron == "up") {
+								if (chevron === "up") {
 									setChevron("down");
 									setTrayShow(true);
 								} else {
@@ -134,7 +134,7 @@ const Footer = () => {
 								}
 							}}
 						>
-							{chevron == "down" ? (
+							{chevron === "down" ? (
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
@@ -168,8 +168,8 @@ const Footer = () => {
 						</div>
 						{/* System Tray */}
 						{trayShow && (
-							<div className="wndows_AnimateFromBottom absolute bottom-16 bg-black/50 pl-3 pr-3 pt-3 pb-3 rounded right-52">
-								<ul>
+							<div className="wndows_AnimateFromBottom absolute bottom-16 pl-3 pr-3 pt-3 pb-3 rounded-xl right-52">
+								<ul className="backdrop-blur-3xl">
 									<li className="hover:cursor-pointer flex space-x-4">
 										<Image
 											src={vscode}
@@ -247,7 +247,7 @@ const Footer = () => {
 						<div
 							className=""
 							onClick={() => {
-								if (calender == "close") {
+								if (calender === "close") {
 									setcondition("don't render");
 									setFeedState("close");
 									setQuickSettingState("close");

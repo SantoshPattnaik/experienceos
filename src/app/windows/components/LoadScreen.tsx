@@ -4,9 +4,9 @@ import Desktop from "./Desktop";
 function LoadScreen() {
 	return (
 		<>
-			<div className="h-full w-full macos_fadein">
+			<div className="h-fir w-fit macos_fadein">
 				<Desktop />
-				<audio autoPlay>
+				<audio autoPlay className="hidden">
 					<source src="/windowsicons/Startup.mp3" />
 				</audio>
 			</div>

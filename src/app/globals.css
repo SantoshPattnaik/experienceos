@@ -54,16 +54,18 @@ body {
 }
 
 .wndows_AnimateFromBottom {
-  animation: slideInFromBottom 200ms linear;
+  animation: slideInFromBottom linear;
+  animation-duration: 200ms;
+
 }
 
 
 @keyframes slideInFromBottom {
   0% {
     transform: translateY(100%);
-    opactity: 0;
+    position: sticky;
   }
-  25%{
+  /* 25%{
     transform: translateY(75%);
   }
   50%{
@@ -71,10 +73,10 @@ body {
   }
   75%{
     transform: translateY(25%);
-  }
+  } */
   100% {
     transform: translateY(0%);
-    opacity: 1;
+    display: absolute;
   }
 }
 
