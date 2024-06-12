@@ -162,12 +162,12 @@ function Menubar() {
 			<div className="bg-white/50">
 				<nav className="menubar flex w-full gap-20">
 					<div className="menus">
-						<ul className="flex gap-5 text-[17px] font-medium">
+						<ul className="flex gap-5 text-[19px] font-medium">
 							<li className="hover:cursor-pointer">
 								<ul className="text-2xl">
 									{/* Apple Logo */}
 									<FaApple
-										className="ml-3"
+										className="ml-3 mt-[1px]"
 										onClick={() => {
 											if (!apple_is_clicked) {
 												setAppleIsClicked(true);
@@ -321,7 +321,7 @@ function Menubar() {
 						</ul>
 					</div>
 					<div className="status justify-end flex-grow mr-1">
-						<ul className="flex space-x-2 text-[20px] font-medium justify-end ">
+						<ul className="flex space-x-2 text-[19px] font-medium justify-end ">
 							{/* Time Viewer */}
 							<li>
 								<FaWifi className="text-2xl hover:cursor-pointer mt-0.5" />
