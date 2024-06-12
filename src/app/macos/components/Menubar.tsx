@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { FaApple, FaWifi } from "react-icons/fa";
 import { Time } from "../../main_interface/components/Time";
 import { IoMdBluetooth, IoMdSearch } from "react-icons/io";
@@ -321,22 +321,22 @@ function Menubar() {
 						</ul>
 					</div>
 					<div className="status justify-end flex-grow mr-1">
-						<ul className="flex space-x-2 text-[17px] font-medium justify-end ">
+						<ul className="flex space-x-2 text-[20px] font-medium justify-end ">
 							{/* Time Viewer */}
 							<li>
-								<FaWifi className="text-2xl hover:cursor-pointer" />
+								<FaWifi className="text-2xl hover:cursor-pointer mt-0.5" />
 							</li>
 							<li>
-								<IoMdBluetooth className="text-2xl hover:cursor-pointer" />
+								<IoMdBluetooth className="text-2xl hover:cursor-pointer mt-0.5" />
 							</li>
 							<li>
-								<FaDisplay className="text-2xl hover:cursor-pointer" />
+								<FaDisplay className="text-2xl hover:cursor-pointer mt-0.5" />
 							</li>
 							<li>
-								<TiBatteryCharge className="text-2xl hover:cursor-pointer" />
+								<TiBatteryCharge className="text-2xl hover:cursor-pointer mt-0.5" />
 							</li>
 							<li>
-								<IoMdSearch className="text-2xl hover:cursor-pointer" />
+								<IoMdSearch className="text-2xl hover:cursor-pointer mt-0.5" />
 							</li>
 							<div
 								onClick={() => {
@@ -551,6 +551,6 @@ function Menubar() {
 			</div>
 		</>
 	);
-}
+};
 
 export default Menubar;
