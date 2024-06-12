@@ -143,7 +143,7 @@ const help: Menubar_Options[] = [
 	{ id: 2, text: "macOS", separator: false, gray: true },
 ];
 
-function Menubar() {
+const Menubar = () => {
 	const [apple_is_clicked, setAppleIsClicked] = useState<boolean>(false);
 	const [finder_is_clicked, setFinderIsClicked] = useState<boolean>(false);
 	const [file_is_clicked, setFileIsClicked] = useState<boolean>(false);
