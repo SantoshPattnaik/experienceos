@@ -34,7 +34,7 @@ const LoadingScreen = () => {
 					welcome ? "hidden" : "bg-black h-full flex justify-center"
 				}`}
 			>
-				<video width={700} autoPlay muted onEnded={videoEnd}>
+				<video width={200} autoPlay muted onEnded={videoEnd}>
 					<source src="/macosicons/large.mp4" type="video/mp4" />
 				</video>
 			</div>
