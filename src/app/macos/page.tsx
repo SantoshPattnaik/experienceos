@@ -1,5 +1,4 @@
 import React from "react";
-import Desktop from "./components/Desktop";
 import LoadingScreen from "./components/LoadingScreen";
 
 const page = () => {
