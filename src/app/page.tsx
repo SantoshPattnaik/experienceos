@@ -1,3 +1,4 @@
+import React from "react";
 import Main from "./main_interface/main";
 
 const Home = (): React.JSX.Element => {
