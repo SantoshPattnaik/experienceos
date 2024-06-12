@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-const MenuContext = React.createContext({});
+const MenuContext = React.createContext<MenuContextProps | null>(null);
 
 const MenuContextProvider = ({ children }: { children: React.ReactNode }) => {
 	const [menu, setMenu] = React.useState<string>("");

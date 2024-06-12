@@ -1,5 +1,12 @@
 "use client";
-import React, { useState, useEffect, useRef, useContext } from "react";
+import React, {
+	useState,
+	useEffect,
+	useRef,
+	useContext,
+	Dispatch,
+	SetStateAction,
+} from "react";
 import { FaApple, FaWifi } from "react-icons/fa";
 import { Time } from "../../main_interface/components/Time";
 import { IoMdBluetooth, IoMdSearch } from "react-icons/io";
@@ -7,6 +14,7 @@ import { FaDisplay } from "react-icons/fa6";
 import { TiBatteryCharge } from "react-icons/ti";
 import Calender from "../../main_interface/components/Calender";
 import System_preferences from "../apps/System_preferences";
+import { MenuContext } from "@/app/context/MenuContextProvider";
 
 interface Menubar_Options {
 	id: number;
@@ -145,20 +153,20 @@ function Menubar() {
 	const [window_is_clicked, setWindowIsClicked] = useState<boolean>(false);
 	const [help_is_clicked, setHelpIsClicked] = useState<boolean>(false);
 	const [time_is_clicked, setTimeIsClicked] = useState<boolean>(false);
-	const [body_is_clicked, setBodyIsClicked] = useState<boolean>(false);
 
-	// document.body.addEventListener("click", (event) => {
-	// 	// console.log(event.target);
-	// 	let target=event.target
-	// 	if (
-	// 		(target as unknown).includes("")
-	// 	) {
-	// 		setBodyIsClicked(false);
-	// 	}
-	// });
-
+	const { menu, setMenu } = useContext(MenuContext) as MenuContextProps;
+	console.log(menu);
 	return (
 		<>
+			{/* {menu} */}
+			<div
+				className="bg-black text-white text-xl"
+				onClick={() => {
+					setMenu("hello Santosh");
+				}}
+			>
+				Test
+			</div>
 			<div className="bg-white/50">
 				<nav className="menubar flex w-full gap-20">
 					<div className="menus">
