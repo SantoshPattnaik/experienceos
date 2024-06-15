@@ -31,12 +31,19 @@ const LoadingScreen = () => {
 
 			<div
 				className={`${
-					welcome ? "hidden" : "bg-black h-full flex justify-center"
+					welcome
+						? "hidden"
+						: "bg-black h-full w-full flex justify-center"
 				}`}
 			>
 				<video width={200} autoPlay muted onEnded={videoEnd}>
 					<source src="/macosicons/large.mp4" type="video/mp4" />
 				</video>
+				<div className="outline-1 rounded-lg h-2 w-[80px] text-white">
+					<div className="loadbar bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+						{" "}
+					</div>
+				</div>
 			</div>
 		</>
 	);
