@@ -9,6 +9,8 @@
 # testing
 /coverage
 
+.hintrc
+
 # next.js
 /.next/
 /out/

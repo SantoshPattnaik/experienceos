@@ -41,6 +41,52 @@ body {
 	background-size: cover;
 }
 .linux {
-	background-image: url("../../public/Jammy-Jellyfish_WP_1920x1080.jpg");
+	background-image: url("../../public/linux.jpeg");
 	background-size: cover;
+}
+.ashutosh {
+	background-image: url("../../public/about/ashutosh.jpg");
+	background-size: cover;
+}
+.santosh {
+	background-image: url("../../public/about/santosh.jpg");
+	background-size: cover;
+}
+
+.wndows_AnimateFromBottom {
+	animation: slideInFromBottom linear;
+	animation-duration: 200ms;
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(100%);
+		position: sticky;
+	}
+	/* 25%{
+    transform: translateY(75%);
+  }
+  50%{
+    transform: translateY(50%);
+  }
+  75%{
+    transform: translateY(25%);
+  } */
+	100% {
+		transform: translateY(0%);
+		display: absolute;
+	}
+}
+
+.macos_fadein {
+	animation: fadein 1s linear;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }

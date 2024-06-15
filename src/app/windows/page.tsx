@@ -1,9 +1,9 @@
-import React from "react";
-import Desktop from "./components/Desktop";
+import React, { useState } from "react";
+import LoadScreen from "./components/LoadScreen";
 const page = (): React.JSX.Element => {
 	return (
-		<div className="windows w-[100vw] h-[100vh]">
-			<Desktop />
+		<div className="windows w-[100vw] h-[100vh] select-none">
+			<LoadScreen />
 		</div>
 	);
 };
