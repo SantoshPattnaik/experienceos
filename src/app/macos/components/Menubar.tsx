@@ -15,26 +15,29 @@ import { TiBatteryCharge } from "react-icons/ti";
 import Calender from "../../main_interface/components/Calender";
 import System_preferences from "../apps/System_preferences";
 import { MenuContext } from "@/app/context/MenuContextProvider";
+import { SettingsContext } from "@/app/context/SettingsContextProvider";
+import {
+	apple_logo,
+	finder,
+	file,
+	edit,
+	view,
+	go,
+	window,
+	help,
+} from "@/app/macos/components/Menubar_Options";
 
-interface Menubar_Options {
-	id: number;
-	text: string;
-	separator: boolean;
-	gray: boolean;
-}
-
-const apple_logo: Menubar_Options[] = [
-	{ id: 1, text: "About This Mac", separator: true, gray: false },
-	{ id: 2, text: "System Preferences...", separator: true, gray: false },
-	{ id: 3, text: "App Store...", separator: true, gray: false },
-	{ id: 4, text: "Recent Items", separator: false, gray: false },
-	{ id: 5, text: "Force Quit", separator: false, gray: false },
-	{ id: 6, text: "Sleep", separator: false, gray: false },
-	{ id: 7, text: "Restart", separator: false, gray: false },
-	{ id: 8, text: "Shutdown", separator: true, gray: false },
-	{ id: 9, text: "Lock Screen", separator: false, gray: false },
-	{ id: 10, text: "Log Out User...", separator: false, gray: false },
-];
+type Toggle_States = {
+	apple: boolean;
+	finder: boolean;
+	file: boolean;
+	edit: boolean;
+	view: boolean;
+	go: boolean;
+	window: boolean;
+	help: boolean;
+	time: boolean;
+};
 
 const reducer = (state: Toggle_States, action: { type: string }) => {
 	switch (action.type) {
