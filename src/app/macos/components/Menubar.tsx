@@ -422,7 +422,7 @@ const Menubar = () => {
 									<div
 										className={`${
 											items.gray
-												? "hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2 text-gray-500"
+												? "hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2 text-gray-500"
 												: "hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2"
 										}`}
 									>
@@ -446,7 +446,7 @@ const Menubar = () => {
 									<div
 										className={`${
 											items.gray
-												? "hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2 text-gray-500"
+												? "hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2 text-gray-500"
 												: "hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2"
 										}`}
 									>
