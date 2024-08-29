@@ -6,6 +6,7 @@ import React, {
 	useContext,
 	Dispatch,
 	SetStateAction,
+	useReducer,
 } from "react";
 import { FaApple, FaWifi } from "react-icons/fa";
 import { Time } from "../../main_interface/components/Time";
