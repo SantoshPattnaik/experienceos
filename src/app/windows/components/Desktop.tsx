@@ -16,7 +16,7 @@ function Desktop() {
 		<div className="h-screen w-screen">
 			<SettingsContextProvider>
 				<DesktopShortcut />
-				<Settings />
+				{/* <Settings /> */}
 				<Footer />
 			</SettingsContextProvider>
 		</div>
