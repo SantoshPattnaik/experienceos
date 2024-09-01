@@ -187,15 +187,6 @@ const Menubar = () => {
 
 	return (
 		<>
-			{/* {menu} */}
-			<div
-				className="bg-black text-white text-xl"
-				onClick={() => {
-					setMenu("hello Santosh");
-				}}
-			>
-				Test
-			</div>
 			<div className="bg-white/50">
 				<nav className="menubar flex w-full gap-20">
 					<div className="menus">
