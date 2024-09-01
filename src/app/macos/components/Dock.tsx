@@ -24,20 +24,10 @@ function Dock() {
 					<ul className="flex">
 						{/*add more icons here */}
 						<li className="transition  duration-300 ease-in hover:scale-150 hover:z-50 hover:-translate-y-10 hover:mx-4">
-							<Image
-								src={calender}
-								alt=""
-								width={64}
-								height={64}
-							/>
+							<Image src={calender} alt="" width={64} height={64} />
 						</li>
 						<li className="transition  duration-300 ease-in hover:scale-150 hover:z-50 hover:-translate-y-10 hover:mx-4">
-							<Image
-								src={downloads}
-								alt=""
-								width={64}
-								height={64}
-							/>
+							<Image src={downloads} alt="" width={64} height={64} />
 						</li>
 						<li className="transition  duration-300 ease-in hover:scale-150 hover:z-50 hover:-translate-y-10 hover:mx-4">
 							<Image src={xcode} alt="" width={64} height={64} />
@@ -59,12 +49,7 @@ function Dock() {
 									}
 								}}
 							>
-								<Image
-									src={appLauncher}
-									alt=""
-									width={60}
-									height={60}
-								/>
+								<Image src={appLauncher} alt="" width={60} height={60} />
 							</button>
 						</li>
 					</ul>
