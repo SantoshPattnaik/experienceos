@@ -1,5 +1,4 @@
 import React from "react";
-
 import Menubar from "./Menubar";
 import Dock from "./Dock";
 import { AppleFontMedium, AppleFontRegular } from "@/app/fonts";
