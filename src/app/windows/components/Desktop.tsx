@@ -3,11 +3,6 @@ import DesktopShortcut from "./DesktopShortcut";
 import Footer from "./Footer";
 import { SettingsContextProvider } from "../../context/SettingsContextProvider";
 
-// import folder from "../../../../public/windowsicons/folder.png";
-// import thispc from "../../../../public/windowsicons/monitor.png";
-// import recycle from "../../../../public/windowsicons/icons8-recycle-bin-96.png";
-// import controlp from "../../../../public/windowsicons/icons8-control-panel-96.png";
-
 // Assuming your context data has a 'render' property
 
 function Desktop() {
