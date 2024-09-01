@@ -8,6 +8,7 @@ import { SettingsContextProvider } from "@/app/context/SettingsContextProvider";
 import Application_renderer from "./Application_renderer";
 
 function Desktop() {
+	// const render = useContext(SettingsContext) as SettingsContextProps;
 	return (
 		<MenuBarCloseContextProvider>
 			<div
