@@ -25,15 +25,7 @@ import skype from "../../../../public/macosicons/MacosICO/Skype - dark.svg";
 import chrome from "../../../../public/macosicons/MacosICO/Chrome - dark.svg";
 
 function LaunchPad() {
-	let arr1 = [
-		Discord,
-		Dropbox,
-		firefox,
-		jetbrains,
-		Notion,
-		Spotify,
-		Obsidian,
-	];
+	let arr1 = [Discord, Dropbox, firefox, jetbrains, Notion, Spotify, Obsidian];
 	let arr2 = [figma, blender, clean, proto, sketch, slack, transmit];
 	let arr3 = [trello, twitter, vlc, vscode, skype, chrome];
 	return (
