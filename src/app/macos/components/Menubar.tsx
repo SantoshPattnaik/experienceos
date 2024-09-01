@@ -40,130 +40,144 @@ type Toggle_States = {
 	time: boolean;
 };
 
-const reducer = (state: Toggle_States, action: { type: string }) => {
-	switch (action.type) {
-		case "toggle_apple":
-			console.log(state.apple);
-			return {
-				...state,
-				apple: !state.apple,
-				finder: false,
-				file: false,
-				edit: false,
-				view: false,
-				go: false,
-				window: false,
-				help: false,
-				time: false,
-			};
-		case "toggle_finder":
-			return {
-				...state,
-				apple: false,
-				finder: !state.finder,
-				file: false,
-				edit: false,
-				view: false,
-				go: false,
-				window: false,
-				help: false,
-				time: false,
-			};
-		case "toggle_file":
-			return {
-				...state,
-				apple: false,
-				finder: false,
-				file: !state.file,
-				edit: false,
-				view: false,
-				go: false,
-				window: false,
-				help: false,
-				time: false,
-			};
-		case "toggle_edit":
-			return {
-				...state,
-				apple: false,
-				finder: false,
-				file: false,
-				edit: !state.edit,
-				view: false,
-				go: false,
-				window: false,
-				help: false,
-				time: false,
-			};
-		case "toggle_view":
-			return {
-				...state,
-				apple: false,
-				finder: false,
-				file: false,
-				edit: false,
-				view: !state.view,
-				go: false,
-				window: false,
-				help: false,
-				time: false,
-			};
-		case "toggle_go":
-			return {
-				...state,
-				apple: false,
-				finder: false,
-				file: false,
-				edit: false,
-				view: false,
-				go: !state.go,
-				window: false,
-				help: false,
-				time: false,
-			};
-		case "toggle_window":
-			return {
-				...state,
-				apple: false,
-				finder: false,
-				file: false,
-				edit: false,
-				view: false,
-				go: false,
-				window: !state.window,
-				help: false,
-				time: false,
-			};
-		case "toggle_help":
-			return {
-				...state,
-				apple: false,
-				finder: false,
-				file: false,
-				edit: false,
-				view: false,
-				go: false,
-				window: false,
-				help: !state.help,
-				time: false,
-			};
-		case "toggle_time":
-			return {
-				...state,
-				apple: false,
-				finder: false,
-				file: false,
-				edit: false,
-				view: false,
-				go: false,
-				window: false,
-				help: false,
-				time: !state.time,
-			};
-		default:
-			return state;
-	}
-};
+const Menubar = () => {
+	const menu = useContext(MenuBarCloseContext) as MenuBarCloseContextProps;
+	const reducer = (state: Toggle_States, action: { type: string }) => {
+		switch (action.type) {
+			case "toggle_apple":
+				return {
+					...state,
+					apple: !state.apple,
+					finder: false,
+					file: false,
+					edit: false,
+					view: false,
+					go: false,
+					window: false,
+					help: false,
+					time: false,
+				};
+			case "toggle_finder":
+				return {
+					...state,
+					apple: false,
+					finder: !state.finder,
+					file: false,
+					edit: false,
+					view: false,
+					go: false,
+					window: false,
+					help: false,
+					time: false,
+				};
+			case "toggle_file":
+				return {
+					...state,
+					apple: false,
+					finder: false,
+					file: !state.file,
+					edit: false,
+					view: false,
+					go: false,
+					window: false,
+					help: false,
+					time: false,
+				};
+			case "toggle_edit":
+				return {
+					...state,
+					apple: false,
+					finder: false,
+					file: false,
+					edit: !state.edit,
+					view: false,
+					go: false,
+					window: false,
+					help: false,
+					time: false,
+				};
+			case "toggle_view":
+				return {
+					...state,
+					apple: false,
+					finder: false,
+					file: false,
+					edit: false,
+					view: !state.view,
+					go: false,
+					window: false,
+					help: false,
+					time: false,
+				};
+			case "toggle_go":
+				return {
+					...state,
+					apple: false,
+					finder: false,
+					file: false,
+					edit: false,
+					view: false,
+					go: !state.go,
+					window: false,
+					help: false,
+					time: false,
+				};
+			case "toggle_window":
+				return {
+					...state,
+					apple: false,
+					finder: false,
+					file: false,
+					edit: false,
+					view: false,
+					go: false,
+					window: !state.window,
+					help: false,
+					time: false,
+				};
+			case "toggle_help":
+				return {
+					...state,
+					apple: false,
+					finder: false,
+					file: false,
+					edit: false,
+					view: false,
+					go: false,
+					window: false,
+					help: !state.help,
+					time: false,
+				};
+			case "toggle_time":
+				return {
+					...state,
+					apple: false,
+					finder: false,
+					file: false,
+					edit: false,
+					view: false,
+					go: false,
+					window: false,
+					help: false,
+					time: !state.time,
+				};
+			case "close-all":
+				return {
+					...state,
+					apple: false,
+					finder: false,
+					file: false,
+					edit: false,
+					view: false,
+					go: false,
+					window: false,
+					help: false,
+					time: false,
+				};
+			default:
+				return state;
+		}
+	};
 
 const Menubar = () => {
 	// Implementation of useReducer() hook for state management
