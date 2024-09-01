@@ -197,6 +197,7 @@ const Menubar = () => {
 									<FaApple
 										className="ml-3 mt-[1px]"
 										onClick={() => {
+											menu.setClose(false);
 											dispatch({ type: "toggle_apple" });
 										}}
 									/>
@@ -204,55 +205,64 @@ const Menubar = () => {
 							</li>
 							<li
 								className="hover:cursor-pointer font-bold"
-								onClick={() =>
-									dispatch({ type: "toggle_finder" })
-								}
+								onClick={() => {
+									menu.setClose(false);
+									dispatch({ type: "toggle_finder" });
+								}}
 							>
 								Finder
 							</li>
 							<li
 								className="hover:cursor-pointer"
-								onClick={() =>
-									dispatch({ type: "toggle_file" })
-								}
+								onClick={() => {
+									menu.setClose(false);
+									dispatch({ type: "toggle_file" });
+								}}
 							>
 								File
 							</li>
 							<li
 								className="hover:cursor-pointer"
-								onClick={() =>
-									dispatch({ type: "toggle_edit" })
-								}
+								onClick={() => {
+									menu.setClose(false);
+									dispatch({ type: "toggle_edit" });
+								}}
 							>
 								Edit
 							</li>
 							<li
 								className="hover:cursor-pointer"
-								onClick={() =>
-									dispatch({ type: "toggle_view" })
-								}
+								onClick={() => {
+									menu.setClose(false);
+									dispatch({ type: "toggle_view" });
+								}}
 							>
 								View
 							</li>
 							<li
 								className="hover:cursor-pointer"
-								onClick={() => dispatch({ type: "toggle_go" })}
+								onClick={() => {
+									menu.setClose(false);
+									dispatch({ type: "toggle_go" });
+								}}
 							>
 								Go
 							</li>
 							<li
 								className="hover:cursor-pointer"
-								onClick={() =>
-									dispatch({ type: "toggle_window" })
-								}
+								onClick={() => {
+									menu.setClose(false);
+									dispatch({ type: "toggle_window" });
+								}}
 							>
 								Window
 							</li>
 							<li
 								className="hover:cursor-pointer"
-								onClick={() =>
-									dispatch({ type: "toggle_help" })
-								}
+								onClick={() => {
+									menu.setClose(false);
+									dispatch({ type: "toggle_help" });
+								}}
 							>
 								Help
 							</li>
@@ -277,9 +287,10 @@ const Menubar = () => {
 								<IoMdSearch className="text-2xl hover:cursor-pointer mt-0.5" />
 							</li>
 							<div
-								onClick={() =>
-									dispatch({ type: "toggle_time" })
-								}
+								onClick={() => {
+									menu.setClose(false);
+									dispatch({ type: "toggle_time" });
+								}}
 							>
 								<Time />
 							</div>
