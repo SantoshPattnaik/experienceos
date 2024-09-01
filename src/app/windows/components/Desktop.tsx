@@ -1,7 +1,6 @@
 import { MenuContextProvider } from "@/app/context/MenuContextProvider";
 import DesktopShortcut from "./DesktopShortcut";
 import Footer from "./Footer";
-import Settings from "./Settings";
 import { SettingsContextProvider } from "../../context/SettingsContextProvider";
 
 // import folder from "../../../../public/windowsicons/folder.png";
