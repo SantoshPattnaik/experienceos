@@ -162,7 +162,6 @@ const Menubar = () => {
 		}
 	};
 
-const Menubar = () => {
 	// Implementation of useReducer() hook for state management
 	const states = {
 		apple: false,
@@ -176,13 +175,16 @@ const Menubar = () => {
 		time: false,
 	};
 
-	const [state, dispatch]: [Toggle_States, React.Dispatch<any>] = useReducer(
-		reducer,
-		states
-	);
+	const [state, dispatch]: [Toggle_States, React.Dispatch<any>] = useReducer(reducer, states);
 
-	const { menu, setMenu } = useContext(MenuContext) as MenuContextProps;
-	console.log(menu);
+	const { render, setRender } = useContext(SettingsContext) as SettingsContextProps;
+
+	useEffect(() => {
+		if (menu.close) {
+			dispatch({ type: "close-all" });
+		}
+	}, [menu.close]);
+
 	return (
 		<>
 			{/* {menu} */}
