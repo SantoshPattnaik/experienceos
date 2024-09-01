@@ -17,16 +17,7 @@ import Calender from "../../main_interface/components/Calender";
 import System_preferences from "../apps/System_preferences";
 import { MenuBarCloseContext } from "@/app/context/MenuBarCloseContextProvider";
 import { SettingsContext } from "@/app/context/SettingsContextProvider";
-import {
-	apple_logo,
-	finder,
-	file,
-	edit,
-	view,
-	go,
-	window,
-	help,
-} from "@/app/macos/components/Menubar_Options";
+import { apple_logo, finder, file, edit, view, go, window, help } from "@/app/macos/components/Menubar_Options";
 
 type Toggle_States = {
 	apple: boolean;
