@@ -310,6 +310,9 @@ const Menubar = () => {
 												? "hover:cursor-pointer hover:rounded-md hover:w-[220px] pl-2 text-gray-500"
 												: "hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2"
 										}`}
+										onClick={() => {
+											setRender(true);
+										}}
 									>
 										{item.text}
 									</div>
