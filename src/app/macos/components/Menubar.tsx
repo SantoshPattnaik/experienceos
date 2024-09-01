@@ -1,13 +1,5 @@
 "use client";
-import React, {
-	useState,
-	useEffect,
-	useRef,
-	useContext,
-	Dispatch,
-	SetStateAction,
-	useReducer,
-} from "react";
+import React, { useEffect, useContext, useReducer } from "react";
 import { FaApple, FaWifi } from "react-icons/fa";
 import { Time } from "../../main_interface/components/Time";
 import { IoMdBluetooth, IoMdSearch } from "react-icons/io";
