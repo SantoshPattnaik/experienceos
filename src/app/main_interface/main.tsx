@@ -10,10 +10,7 @@ const Main = (): React.JSX.Element => {
 				<div className="text-5xl">
 					<h1>EXPERIENCE OS</h1>
 				</div>
-				<i>
-					The fastest way to feel the UI of different Operating
-					systems
-				</i>
+				<i>The fastest way to feel the UI of different Operating systems</i>
 			</div>
 
 			<div className="flex  flex-col items-center justify-between ">
@@ -25,7 +22,9 @@ const Main = (): React.JSX.Element => {
 						<div className="absolute -inset-1 blur opacity-75 rounded-xl bg-blue-600 group-hover:opacity-100 group-hover:-inset-2 transition duration-200"></div>
 						<Link href="/windows">
 							<div className="windows relative h-60 w-80 border-2 rounded-xl flex justify-center">
-								<div className="absolute bottom-2 right-2 group-hover:scale-125 transition duration-200 ease-linear">Windows</div>
+								<div className="absolute bottom-2 right-2 group-hover:scale-125 transition duration-200 ease-linear">
+									Windows
+								</div>
 							</div>
 						</Link>
 					</div>
@@ -33,7 +32,9 @@ const Main = (): React.JSX.Element => {
 						<div className="absolute -inset-1 blur opacity-75 sounded-xl bg-fuchsia-800 group-hover:opacity-100 group-hover:-inset-2 transition duration-200"></div>
 						<Link href="/linux">
 							<div className="linux relative h-60 w-80 border-2 rounded-xl flex justify-center">
-								<div className="absolute bottom-2 right-2 group-hover:scale-125 transition duration-200 ease-linear">Linux</div>
+								<div className="absolute bottom-2 right-2 group-hover:scale-125 transition duration-200 ease-linear">
+									Linux
+								</div>
 							</div>
 						</Link>
 					</div>
@@ -41,7 +42,9 @@ const Main = (): React.JSX.Element => {
 						<div className="absolute -inset-1 blur opacity-75 rounded-xl bg-red-900 group-hover:opacity-100 group-hover:-inset-2 transition duration-200"></div>
 						<Link href="/macos">
 							<div className="macos relative h-60 w-80 border-2 rounded-xl flex justify-center">
-								<div className="absolute bottom-2 right-2 group-hover:scale-125 transition duration-200 ease-linear">Mac OS</div>
+								<div className="absolute bottom-2 right-2 group-hover:scale-125 transition duration-200 ease-linear">
+									Mac OS
+								</div>
 							</div>
 						</Link>
 					</div>
