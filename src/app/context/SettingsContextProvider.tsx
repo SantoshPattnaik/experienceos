@@ -3,15 +3,7 @@ import { createContext, useState } from "react";
 
 export const SettingsContext = createContext<SettingsContextProps | null>(null);
 
-export function SettingsContextProvider({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export function SettingsContextProvider({ children }: { children: React.ReactNode }) {
 	const [render, setRender] = useState<boolean>(false);
-	return (
-		<SettingsContext.Provider value={{ render, setRender }}>
-			{children}
-		</SettingsContext.Provider>
-	);
+	return <SettingsContext.Provider value={{ render, setRender }}>{children}</SettingsContext.Provider>;
 }
