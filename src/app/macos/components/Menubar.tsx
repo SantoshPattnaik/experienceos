@@ -483,9 +483,7 @@ const Menubar = () => {
 					</ul>
 				</div>
 			)}
-			<div className="absolute bg-white/50 w-fit rounded right-0 mt-1 mr-1">
-				{state.time && <Calender />}
-			</div>
+			<div className="absolute bg-white/50 w-fit rounded right-0 mt-1 mr-1">{state.time && <Calender />}</div>
 		</>
 	);
 };
