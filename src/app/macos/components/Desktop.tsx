@@ -3,7 +3,9 @@ import React from "react";
 import Menubar from "./Menubar";
 import Dock from "./Dock";
 import { AppleFontMedium, AppleFontRegular } from "@/app/fonts";
-import { MenuContextProvider } from "@/app/context/MenuContextProvider";
+import { MenuBarCloseContextProvider } from "@/app/context/MenuBarCloseContextProvider";
+import { SettingsContextProvider } from "@/app/context/SettingsContextProvider";
+import Application_renderer from "./Application_renderer";
 
 function Desktop() {
 	return (
