@@ -1,7 +1,7 @@
 "use client";
 import { createContext, useState } from "react";
 
-export const SettingsContext = createContext({});
+export const SettingsContext = createContext<SettingsContextProps | null>(null);
 
 export function SettingsContextProvider({
 	children,
