@@ -15,7 +15,7 @@ import { FaDisplay } from "react-icons/fa6";
 import { TiBatteryCharge } from "react-icons/ti";
 import Calender from "../../main_interface/components/Calender";
 import System_preferences from "../apps/System_preferences";
-import { MenuContext } from "@/app/context/MenuContextProvider";
+import { MenuBarCloseContext } from "@/app/context/MenuBarCloseContextProvider";
 import { SettingsContext } from "@/app/context/SettingsContextProvider";
 import {
 	apple_logo,
