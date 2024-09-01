@@ -7,7 +7,7 @@ import { MenuContextProvider } from "@/app/context/MenuContextProvider";
 
 function Desktop() {
 	return (
-		<MenuContextProvider>
+		<MenuBarCloseContextProvider>
 			<div
 				style={{
 					backgroundImage: "url('366398.jpg')",
