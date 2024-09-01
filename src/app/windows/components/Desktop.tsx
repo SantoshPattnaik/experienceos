@@ -1,4 +1,3 @@
-import { MenuContextProvider } from "@/app/context/MenuContextProvider";
 import DesktopShortcut from "./DesktopShortcut";
 import Footer from "./Footer";
 import { SettingsContextProvider } from "../../context/SettingsContextProvider";
