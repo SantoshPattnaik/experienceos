@@ -17,10 +17,13 @@ function Desktop() {
 				}}
 				className={`${AppleFontMedium.className} h-full`}
 			>
-				<Menubar />
+				<SettingsContextProvider>
+					<Menubar />
+					<Application_renderer />
+				</SettingsContextProvider>
 				<Dock />
 			</div>
-		</MenuContextProvider>
+		</MenuBarCloseContextProvider>
 	);
 }
 
