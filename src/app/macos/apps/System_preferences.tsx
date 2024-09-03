@@ -57,7 +57,7 @@ const System_preferences = () => {
 		<MainDiv className="w-full flex justify-center pt-4" onClick={() => menu.setClose(true)}>
 			{/* Application main div */}
 			<div className="h-[90vh] bg-[#eae2de]/85 w-8/12 flex left-10 top-2 rounded-2xl">
-				<div className="pl-4 pb-4 w-56 h-[90vh] border-r-4 border-slate-700">
+				<div className="pl-4 pb-4 w-60 h-[90vh] border-r-4 border-slate-700">
 					<div className="pt-6">
 						<ul className="flex gap-2">
 							<li className="bg-red-500 rounded-full w-3 h-3 flex justify-center items-center">
