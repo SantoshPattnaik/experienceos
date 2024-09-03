@@ -6,7 +6,6 @@ import { IoMdBluetooth, IoMdSearch } from "react-icons/io";
 import { FaDisplay } from "react-icons/fa6";
 import { TiBatteryCharge } from "react-icons/ti";
 import Calender from "../../main_interface/components/Calender";
-import System_preferences from "../apps/System_preferences";
 import { MenuBarCloseContext } from "@/app/context/MenuBarCloseContextProvider";
 import { SettingsContext } from "@/app/context/SettingsContextProvider";
 import { apple_logo, finder, file, edit, view, go, window, help } from "@/app/macos/components/Menubar_Options";
@@ -299,7 +298,7 @@ const Menubar = () => {
 				</nav>
 			</div>
 			{state.apple && (
-				<div className="absolute bg-white/50 top-14 rounded left-2 pt-1 pb-1 w-56">
+				<div className="absolute bg-white/50 top-8 rounded left-2 pt-1 pb-1 w-56">
 					<ul>
 						{apple_logo.map((item) => {
 							return (
@@ -326,7 +325,7 @@ const Menubar = () => {
 				</div>
 			)}
 			{state.finder && (
-				<div className="absolute bg-white/50 top-14 rounded left-10 pt-1 pb-1 w-56">
+				<div className="absolute bg-white/50 top-8 rounded left-10 pt-1 pb-1 w-56">
 					<ul>
 						{finder.map((item) => {
 							return (
@@ -350,7 +349,7 @@ const Menubar = () => {
 				</div>
 			)}
 			{state.file && (
-				<div className="absolute bg-white/50 top-14 rounded left-28 pt-1 pb-1 w-56">
+				<div className="absolute bg-white/50 top-8 rounded left-28 pt-1 pb-1 w-56">
 					<ul>
 						{file.map((item) => {
 							return (
@@ -374,7 +373,7 @@ const Menubar = () => {
 				</div>
 			)}
 			{state.edit && (
-				<div className="absolute bg-white/50 top-14 rounded left-44 pt-1 pb-1 w-56">
+				<div className="absolute bg-white/50 top-8 rounded left-44 pt-1 pb-1 w-56">
 					<ul>
 						{edit.map((item) => {
 							return (
@@ -398,7 +397,7 @@ const Menubar = () => {
 				</div>
 			)}
 			{state.view && (
-				<div className="absolute bg-white/50 top-14 rounded left-56 pt-1 pb-1 w-56">
+				<div className="absolute bg-white/50 top-8 rounded left-56 pt-1 pb-1 w-56">
 					<ul>
 						{view.map((items) => {
 							return (
@@ -422,7 +421,7 @@ const Menubar = () => {
 				</div>
 			)}
 			{state.go && (
-				<div className="absolute bg-white/50 top-14 rounded left-72 pt-1 pb-1 w-56">
+				<div className="absolute bg-white/50 top-8 rounded left-72 pt-1 pb-1 w-56">
 					<ul>
 						{go.map((items) => {
 							return (
@@ -446,7 +445,7 @@ const Menubar = () => {
 				</div>
 			)}
 			{state.window && (
-				<div className="absolute bg-white/50 top-14 rounded left-[328px] pt-1 pb-1 w-56">
+				<div className="absolute bg-white/50 top-8 rounded left-[328px] pt-1 pb-1 w-56">
 					<ul>
 						{window.map((items) => {
 							return (
@@ -470,7 +469,7 @@ const Menubar = () => {
 				</div>
 			)}
 			{state.help && (
-				<div className="absolute bg-white/50 top-14 rounded left-[412px] pt-1 pb-1 w-56">
+				<div className="absolute bg-white/50 top-8 rounded left-[412px] pt-1 pb-1 w-56">
 					<ul>
 						<li>
 							<div className="hover:cursor-pointer hover:bg-sky-500 hover:rounded-md hover:w-[220px] pl-2">
