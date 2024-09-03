@@ -6,7 +6,7 @@ import { SettingsContext } from "../../context/SettingsContextProvider";
 // Assuming your context data has a 'render' property
 
 function Settings() {
-	const { render, setRender } = useContext(SettingsContext);
+	const { render, setRender } = useContext(SettingsContext) as SettingsContextProps;
 	console.log(render);
 
 	return (

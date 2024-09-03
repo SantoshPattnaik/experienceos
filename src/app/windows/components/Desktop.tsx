@@ -1,6 +1,7 @@
 import DesktopShortcut from "./DesktopShortcut";
 import Footer from "./Footer";
 import { SettingsContextProvider } from "../../context/SettingsContextProvider";
+import Settings from "./Settings";
 
 // Assuming your context data has a 'render' property
 
@@ -9,7 +10,7 @@ function Desktop() {
 		<div className="h-screen w-screen">
 			<SettingsContextProvider>
 				<DesktopShortcut />
-				{/* <Settings /> */}
+				<Settings />
 				<Footer />
 			</SettingsContextProvider>
 		</div>
