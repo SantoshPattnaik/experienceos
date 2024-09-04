@@ -1,3 +1,5 @@
+import "./style.css";
+
 import React from "react";
 import GNOME from "./components/GNOME";
 
