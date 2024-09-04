@@ -1,3 +1,5 @@
+import "./style.css";
+
 import Image from "next/image";
 import React from "react";
 
@@ -31,13 +33,7 @@ function page() {
 					href={"https://github.com/SantoshPattnaik/experienceos.git"}
 					className="flex justify-center place-items-center gap-1"
 				>
-					<Image
-						src={github}
-						alt={""}
-						height={50}
-						width={50}
-						className="bg-white rounded-full outline-none"
-					/>
+					<Image src={github} alt={""} height={50} width={50} className="bg-white rounded-full outline-none" />
 					<div className="text-white">Link to repo !</div>
 				</Link>
 			</div>
