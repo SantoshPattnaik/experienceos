@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import "./Windows.css";
+import React from "react";
 import LoadScreen from "./components/LoadScreen";
 const page = (): React.JSX.Element => {
 	return (
